@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lm!fp@xt2ntle(v4=i5rymvew^jykpdqejr0eu%5mpqc68-rq+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'liber.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fusion',
@@ -90,11 +90,11 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432'
     }
-}
-
-"""DATABASES = {
-    'default': dj_database_url.config()
 }"""
+
+DATABASES = {
+    'default': dj_database_url.config()
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -145,14 +145,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGOUT_REDIRECT_URL = 'index'
 
 # E-mail teste console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-"""# E-mail Produção
+# E-mail Produção
 EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = 'no-reply@liber.com.br'
 EMAIL_PORT = 587
 EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'liber'
 DEFAULT_FROM_EMAIL = 'contato@liber.com.br'
-"""
+
