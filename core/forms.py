@@ -18,8 +18,8 @@ class ContatoForm(forms.Form):
         mail = EmailMessage(
             subject=assunto,
             body=conteudo,
-            from_email='contato@fusion.com.br',
-            to=['contato@fusion.com.br'],
+            from_email='contato@liber.com.br',
+            to=['contato@liber.com.br'],
             headers={'Reply-to': email}
         )
         mail.send()

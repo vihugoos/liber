@@ -1,4 +1,4 @@
-#!c:\users\victo\documents\mega\django\fusion\virtual-env\scripts\python.exe
+#!c:\users\victo\documents\mega\django\liber\virtual-env\scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'static3==0.7.0','console_scripts','static'
 import re
 import sys
