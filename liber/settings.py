@@ -145,15 +145,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGOUT_REDIRECT_URL = 'index'
 
 # E-mail teste console
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # E-mail Produção
-EMAIL_HOST = 'localhost'
+"""EMAIL_HOST = 'localhost'
 EMAIL_HOST_USER = 'no-reply@liber.com.br'
 EMAIL_PORT = 587
 EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'liber'
-DEFAULT_FROM_EMAIL = 'contato@liber.com.br'
+DEFAULT_FROM_EMAIL = 'contato@liber.com.br'"""
 
-# CACHE_BACKEND = 'dummy:///'
