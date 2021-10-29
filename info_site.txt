@@ -24,3 +24,11 @@ Product Designer
 Estagiário
 Programador Back-End
 
+.social-icon .instagram:hover {
+  background: #D6274D;
+}
+
+--> VERMELHO ORIGINAL #F63854
+
+--> VERDE DO LOGO #074142
+

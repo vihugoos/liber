@@ -21,16 +21,16 @@ class Base(models.Model):
 
 class Servico(Base):
     ICONE_CHOICES = (
-        ('lni-cog', 'Engrenagem'),
-        ('lni-stats-up', 'Gráfico'),
-        ('lni-users', 'Usuários'),
-        ('lni-layers', 'Design'),
-        ('lni-mobile', 'Mobile'),
-        ('lni-rocket', 'Foguete'),
+        ('lni-home', 'Casa'),
+        ('lni-car', 'Carro'),
+        ('lni-bi-cycle', 'Moto'),
+        ('lni-paperclip', 'Papel'),
+        ('lni-agenda', 'Agenda'),
+        ('lni-bolt-alt', 'Raio'),
     )
     servico = models.CharField('Serviço', max_length=100)
     descricao = models.TextField('Descrição', max_length=200)
-    icone = models.CharField('Icone', max_length=12, choices=ICONE_CHOICES)
+    icone = models.CharField('Icone', max_length=13, choices=ICONE_CHOICES)
 
     class Meta:
         verbose_name = 'Serviço'
