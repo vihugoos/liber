@@ -1,3 +1,4 @@
+from typing import DefaultDict
 from django.db import models
 from stdimage.models import StdImageField 
 import uuid
@@ -28,9 +29,11 @@ class Servico(Base):
         ('lni-agenda', 'Agenda'),
         ('lni-bolt-alt', 'Raio'),
     )
+
     servico = models.CharField('Serviço', max_length=100)
     descricao = models.TextField('Descrição', max_length=200)
     icone = models.CharField('Icone', max_length=13, choices=ICONE_CHOICES)
+    nome_modal = models.CharField('Nome Modal', max_length=100, default="modal")
 
     class Meta:
         verbose_name = 'Serviço'
