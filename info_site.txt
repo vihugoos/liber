@@ -28,7 +28,9 @@ Programador Back-End
   background: #D6274D;
 }
 
---> VERMELHO ORIGINAL #F63854
+--> VERMELHO ORIGINAL ##000080
 
 --> VERDE DO LOGO #074142
+
+--> AZUL #000080
 
