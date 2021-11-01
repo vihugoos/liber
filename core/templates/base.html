@@ -29,7 +29,9 @@
 
     <body>
         <!-- Todo conteúdo da plataforma --> 
-        {% block content %} {% endblock %} 
+        {% include 'header.html' %}
+            {% block content %}  {% endblock %} 
+        {% include 'footer.html' %}
 
         <!-- Go to Top Link -->
         <a href="#" class="back-to-top">
