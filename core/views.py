@@ -1,5 +1,5 @@
 from typing import overload
-from django.views.generic import FormView
+from django.views.generic import FormView, TemplateView
 from django.urls import reverse_lazy
 from django.contrib import messages
 from .models import Servico, Funcionario
@@ -24,4 +24,8 @@ class IndexView(FormView):
     def form_invalid(self, form, *args, **kwargs):
         messages.error(self.request, 'Erro ao enviar e-mail!')
         return super(IndexView, self).form_invalid(form, *args, **kwargs)
+
+
+class SolicitacaoView(TemplateView):
+    template_name = 'solicitacao.html'
 
