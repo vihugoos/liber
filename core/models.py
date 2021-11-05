@@ -86,7 +86,7 @@ class SolicitacaoServico(Base):
     crm = models.IntegerField('Crm')
     nome = models.CharField('Nome', max_length=100)
     tipo_de_servico = CharField('Tipo de Serviço', max_length=100)
-    imagem = StdImageField('Imagem', upload_to=get_file_path)
+    arquivo = models.FileField('Arquivo', upload_to=get_file_path, blank=True)
     mensagem = models.TextField('Mensagem', max_length=450)
 
     def __str__(self):

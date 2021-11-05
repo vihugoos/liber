@@ -29,5 +29,5 @@ class ContatoForm(forms.Form):
 class ServicoModelForm(forms.ModelForm):
     class Meta:
         model = SolicitacaoServico
-        fields = ['crm', 'nome', 'tipo_de_servico', 'imagem', 'mensagem']
+        fields = ['crm', 'nome', 'tipo_de_servico', 'arquivo', 'mensagem']
 

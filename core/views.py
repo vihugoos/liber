@@ -38,13 +38,11 @@ class SolicitacaoView(FormView):
         return context
 
     def form_valid(self, form, *args, **kwargs):
-        print(f"Entrou aqui!")
         form.save()
         messages.success(self.request, 'Solicitação realizada com sucesso!')
         return super(SolicitacaoView, self).form_valid(form, *args, **kwargs)
 
     def form_invalid(self, form, *args, **kwargs):
-        print("passou aqui")
         messages.error(self.request, 'Erro ao solicitar solicitação, tente novamente.')
         return super(SolicitacaoView, self).form_invalid(form, *args, **kwargs)
 
