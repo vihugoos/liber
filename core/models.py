@@ -1,6 +1,9 @@
 from typing import DefaultDict
 from django.db import models
+from django.db.models.fields import CharField, TextField
+from django.forms.widgets import Textarea
 from stdimage.models import StdImageField 
+from django import forms
 import uuid
 
 # Função para gerar nomes automáticos para uploads de arquivo 
@@ -74,6 +77,17 @@ class Funcionario(Base):
     class Meta:
         verbose_name = 'Funcionário'
         verbose_name_plural = 'Funcionários'
+
+    def __str__(self):
+        return self.nome
+
+
+class SolicitacaoServico(Base):
+    crm = models.IntegerField('Crm')
+    nome = models.CharField('Nome', max_length=100)
+    tipo_de_servico = CharField('Tipo de Serviço', max_length=100)
+    imagem = StdImageField('Imagem', upload_to=get_file_path)
+    mensagem = models.TextField('Mensagem', max_length=450)
 
     def __str__(self):
         return self.nome

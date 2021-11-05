@@ -59,14 +59,23 @@
             <div class="col-lg-7 col-md-12 col-sm-12">
                 <div class="contact-block">
 
-                    <form id="solicitacao_form" method="post" action="{% url 'solicitacao' %}" autocomplete="off">
+                    <form class="form" id="solicitacao_form" method="post" action="{% url 'solicitacao' %}" autocomplete="off" enctype="multipart/form-data">
                         {% csrf_token %}
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="crm"> Insira seu CRM </label>
-                                    <input type="number" class="form-control" id="crm" name="crm" placeholder="CRM" required data-error="Please enter your crm" autocomplete="no">
+                                    <label for="crm" hidden> Insira seu CRM </label>
+                                    <input type="number" class="form-control" id="crm" name="crm" placeholder="CRM" required data-error="Please enter your crm" autocomplete="no" value="777777" hidden>
+                                    <div class="help-block with-errors"></div>
+                                </div>                                 
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="crm" hidden> Insira seu Nome </label>
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Please enter your name" autocomplete="no" value="TESTE REAL AGR HEIN" hidden>
                                     <div class="help-block with-errors"></div>
                                 </div>                                 
                             </div>
@@ -74,7 +83,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="selecionar_servico"> Selecione o serviço desejado </label>
-                                    <select class="form-control" id="selecionar_servico" data-error="Select your service" required>
+                                    <select class="form-control" id="tipo_de_servico" name="tipo_de_servico" data-error="Select your service" required>
                                         <option> Home </option>
                                         <option> Veiculo </option>
                                         <option> Office Boy </option>
@@ -88,7 +97,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="anexo_solicitacao"> Anexe uma imagem </label>
-                                    <input type="file" class="form-control-file" id="anexo_solicitacao" name="anexo_solicitacao">
+                                    <input type="file" class="form-control-file" id="imagem" name="imagem">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -103,10 +112,7 @@
                                     <button class="btn btn-common" id="form-submit" type="submit">
                                         SOLICITAR 
                                     </button>
-
                                     <a class="btn btn-secondary" href="{% url 'index' %}"> CANCELAR </a>
-                                    <!-- <a href="#services" class="btn btn-border video-popup"> Saiba mais </i></a> -->
-
                                     <div id="msgSubmit" class="h3 text-center hidden"></div> 
                                     <div class="clearfix"></div> 
                                 </div>

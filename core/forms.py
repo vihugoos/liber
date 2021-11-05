@@ -1,5 +1,6 @@
 from django import forms
 from django.core.mail.message import EmailMessage
+from .models import SolicitacaoServico
 
 class ContatoForm(forms.Form):
     nome = forms.CharField(label='Nome', max_length=100)
@@ -23,4 +24,10 @@ class ContatoForm(forms.Form):
             headers={'Reply-to': email}
         )
         mail.send()
+
+
+class ServicoModelForm(forms.ModelForm):
+    class Meta:
+        model = SolicitacaoServico
+        fields = ['crm', 'nome', 'tipo_de_servico', 'imagem', 'mensagem']
 
