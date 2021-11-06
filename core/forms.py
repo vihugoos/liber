@@ -1,6 +1,8 @@
 from django import forms
 from django.core.mail.message import EmailMessage
 from .models import SolicitacaoServico
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm 
+from .models import CustomUsuario
 
 class ContatoForm(forms.Form):
     nome = forms.CharField(label='Nome', max_length=100)
@@ -30,4 +32,28 @@ class ServicoModelForm(forms.ModelForm):
     class Meta:
         model = SolicitacaoServico
         fields = ['crm', 'nome', 'tipo_de_servico', 'arquivo', 'mensagem']
+
+
+class CustomUsuarioCreateForm(UserCreationForm):
+
+    class Meta:
+        model = CustomUsuario
+        fields = ('first_name', 'last_name')
+        labels = {'username': 'E-mail'}
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.set_password(self.cleaned_data["password1"])
+        user.email = self.cleaned_data["username"]
+        if commit:
+            user.save()
+        return user 
+    
+
+class CustomUsuarioChangeForm(UserChangeForm):
+
+    class Meta:
+        model = CustomUsuario
+        fields = ('first_name', 'last_name')
+
 
