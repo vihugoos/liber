@@ -23,3 +23,9 @@ urlpatterns = [
     path('', include('core.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+
+# Customização da área de Administração
+admin.AdminSite.site_header = 'Sistema Liber'
+admin.AdminSite.site_title = 'Liber - Assesoria & Soluções'
+admin.AdminSite.index_title = 'Área Administrativa'
+

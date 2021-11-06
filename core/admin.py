@@ -30,7 +30,7 @@ class CustomUsuarioAdmin(UserAdmin):
     model = CustomUsuario
     list_display = ('first_name', 'last_name', 'email', 'is_staff')
     fieldsets = (
-        (None, {'fields': ('email', 'password')}),
+        ('Credenciais de Login', {'fields': ('email', 'password')}),
         ('Informações Pessoais', {'fields': ('first_name', 'last_name', 'crm', 'cpf', 'rg', 'celular')}),
         ('Permissões', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Datas Importantes', {'fields': ('last_login', 'date_joined')})
