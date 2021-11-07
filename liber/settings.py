@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lm!fp@xt2ntle(v4=i5rymvew^jykpdqejr0eu%5mpqc68-rq+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'liber.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fusion',
@@ -88,12 +88,12 @@ WSGI_APPLICATION = 'liber.wsgi.application'
         'HOST': 'localhost',
         'PORT': '5432'
     }
-}"""
-
-
-DATABASES = {
-    'default': dj_database_url.config()
 }
+
+
+"""DATABASES = {
+    'default': dj_database_url.config()
+}"""
 
 
 # Password validation
@@ -143,6 +143,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGOUT_REDIRECT_URL = 'index'
 
+
+# Caso tentam acessar a página de solicitação sem estar logado, será redirecionado a página de login 
+LOGIN_URL = 'http://127.0.0.1:8000/admin/'
+
+LOGIN_REDIRECT_URL = 'https://www.google.com/'
+
 # E-mail teste console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -154,5 +160,7 @@ EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'liber'
 DEFAULT_FROM_EMAIL = 'contato@liber.com.br'"""
 
+
+# Váriaveis para usar meu CustomUsuario como padrão para o gerenciamento de Users
 AUTH_USER_MODEL = 'core.CustomUsuario'
 

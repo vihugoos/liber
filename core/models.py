@@ -85,7 +85,7 @@ class Funcionario(Base):
 
 
 class SolicitacaoServico(Base):
-    crm = models.IntegerField('Crm')
+    crm = models.CharField('Crm', max_length=13)
     nome = models.CharField('Nome', max_length=100)
     tipo_de_servico = CharField('Tipo de Serviço', max_length=100)
     arquivo = models.FileField('Arquivo', upload_to=get_file_path, blank=True)
