@@ -18,17 +18,16 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}"> Inicio </a>
+                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Olá, {{ user.first_name }} </a> 
                         </li>
 
                         <li class="nav-item active">
                             <a class="nav-link" href="#solicitacao_form"> Solicite um serviço </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Olá, {{ user.first_name }} </a> 
-                        </li>
                         
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'index' %}"> Voltar ao inicio </a>
+                        </li>
                     </ul>
                     </ul>
                 </div>
@@ -85,6 +84,14 @@
                                 </div>                                 
                             </div>
 
+                            <div class="col-md-6" hidden>
+                                <div class="form-group">
+                                    <label for="plano"> Insira seu plano </label>
+                                    <input type="text" class="form-control" id="plano" name="plano" placeholder="Plano" required data-error="Please enter your plan" autocomplete="no" value="{{ user.plano }}">
+                                    <div class="help-block with-errors"></div>
+                                </div>                                 
+                            </div>
+
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="tipo_de_servico"> Selecione o serviço desejado </label>
@@ -109,7 +116,7 @@
 
                             <div class="col-md-12">
                                 <div class="form-group"> 
-                                    <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem" rows="7" data-error="Write your message" required></textarea>
+                                    <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem" rows="7" data-error="Write your message" required maxlength="450"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
 

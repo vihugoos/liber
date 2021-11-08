@@ -15,6 +15,17 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    
+                    {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Olá, {{ user.first_name }} </a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Login Sistema </a>
+                        </li>
+                    {% endif %}
+
                     <li class="nav-item active">
                         <a class="nav-link" href="#hero-area"> Inicio </a>
                     </li>
@@ -40,17 +51,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact"> Contato </a>
                     </li>
-                    
-                    {% if user.is_authenticated %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Olá, {{ user.first_name }} </a>
-                        </li>
-                    {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Login Sistema </a>
-                        </li>
-                    {% endif %}
-
                 </ul>
                 </ul>
             </div>

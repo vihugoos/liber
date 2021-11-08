@@ -3,6 +3,21 @@ from django.contrib.auth.admin import UserAdmin
 from .forms import CustomUsuarioCreateForm, CustomUsuarioChangeForm
 from .models import Cargo, Servico, Funcionario, SolicitacaoServico, CustomUsuario
 
+@admin.register(CustomUsuario)
+class CustomUsuarioAdmin(UserAdmin):
+    add_form = CustomUsuarioCreateForm
+    form = CustomUsuarioChangeForm
+    model = CustomUsuario
+    list_display = ('email', 'first_name', 'last_name', 'plano')
+    fieldsets = (
+        ('Credenciais de Login', {'fields': ('email', 'password')}),
+        ('Informações Pessoais', {'fields': ('first_name', 'last_name', 'crm', 'cpf', 'rg', 'celular')}),
+        ('Plano Contratado', {'fields': ('plano',)}),
+        ('Permissões', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Datas ref. ao usuário', {'fields': ('last_login', 'date_joined')})
+    )
+
+
 @admin.register(Cargo)
 class CargoAdmin(admin.ModelAdmin):
     list_display = ('cargo', 'ativo', 'modificado')
@@ -20,19 +35,5 @@ class FuncionarioAdmin(admin.ModelAdmin):
 
 @admin.register(SolicitacaoServico)
 class SolicitacaoServicoAdmin(admin.ModelAdmin):
-    list_display = ('crm', 'nome', 'tipo_de_servico', 'ativo')
-
-
-@admin.register(CustomUsuario)
-class CustomUsuarioAdmin(UserAdmin):
-    add_form = CustomUsuarioCreateForm
-    form = CustomUsuarioChangeForm
-    model = CustomUsuario
-    list_display = ('email', 'first_name', 'last_name', 'is_staff')
-    fieldsets = (
-        ('Credenciais de Login', {'fields': ('email', 'password')}),
-        ('Informações Pessoais', {'fields': ('first_name', 'last_name', 'crm', 'cpf', 'rg', 'celular')}),
-        ('Permissões', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
-        ('Datas Importantes', {'fields': ('last_login', 'date_joined')})
-    )
+    list_display = ('crm', 'nome', 'plano', 'tipo_de_servico', 'criado', 'ativo')
 
