@@ -47,7 +47,7 @@ class SolicitacaoView(LoginRequiredMixin, FormView):
         return super(SolicitacaoView, self).form_invalid(form, *args, **kwargs)
 
 
-class PerfilView(TemplateView):
+class PerfilView(LoginRequiredMixin, TemplateView):
     template_name = 'perfil.html'
 
     def get_context_data(self, **kwargs):

@@ -20,20 +20,20 @@ class CustomUsuarioAdmin(UserAdmin):
 
 @admin.register(Cargo)
 class CargoAdmin(admin.ModelAdmin):
-    list_display = ('cargo', 'ativo', 'modificado')
+    list_display = ('cargo', 'modificado')
 
 
 @admin.register(Servico)
 class ServicoAdmin(admin.ModelAdmin):
-    list_display = ('servico', 'icone', 'ativo', 'modificado')
+    list_display = ('servico', 'icone', 'modificado')
 
 
 @admin.register(Funcionario)
 class FuncionarioAdmin(admin.ModelAdmin):
-    list_display = ('nome', 'cargo', 'modificado', 'ativo')
+    list_display = ('nome', 'cargo', 'modificado')
 
 
 @admin.register(SolicitacaoServico)
 class SolicitacaoServicoAdmin(admin.ModelAdmin):
-    list_display = ('crm', 'nome', 'plano', 'tipo_de_servico', 'data_criado', 'hora_criado', 'ativo')
+    list_display = ('crm', 'nome', 'plano', 'tipo_de_servico', 'data_criado', 'hora_criado', 'status', 'finalizado')
 

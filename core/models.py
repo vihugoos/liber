@@ -76,7 +76,6 @@ class Base(models.Model):
     data_criado = models.CharField('Data_Criado', default=datetime.now().strftime(r"%d/%m/%Y"), max_length=15) 
     hora_criado = models.TimeField('Hora_Criado', auto_now_add=True)
     modificado = models.DateField('Atualização', auto_now=True)
-    ativo = models.BooleanField('Ativo?', default=True)
 
     class Meta:
         abstract = True
@@ -156,8 +155,9 @@ class SolicitacaoServico(Base):
     mensagem = models.TextField('Mensagem', max_length=450)
 
     status = models.CharField('Status', max_length=13, choices=STATUS_CHOICES, default="Em_Aberto", blank=True)
+    finalizado = models.BooleanField('Finalizado?', default=False)
     comprovante = models.FileField('Comprovante Serviço', upload_to=get_file_path, blank=True)
-    observacao = models.CharField('Observação', max_length=150, blank=True)
+    observacao = models.TextField('Observação', max_length=450, blank=True)
 
     class Meta:
         verbose_name = 'Solicitação de Serviço'
