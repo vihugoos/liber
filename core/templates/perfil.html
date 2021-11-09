@@ -37,6 +37,7 @@
 
     <section id="perfil" class="section-padding bg-gray">
         
+        <!-- Titulo da página  -->
         <div class="container">
             <div class="section-header text-center"> 
                 <br><br> <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s"> 
@@ -95,45 +96,12 @@
 
                                     <!-- Exibir a mensagem enviada pelo o cliente na solicitação --> 
                                     <td> 
-                                        <a href="" data-toggle="modal" data-target="#{{servico.id}}">
+                                        <a href="" data-toggle="modal" data-target="#123">
                                             Mensagem 
                                         </a> 
-                                    </td>
+                                    </td> 
                                     
-                                    
-
-                                    
-
-
-                                    <!-- Situação da solicitação --> 
-                                    <td> {{ servico.status }} </td>
-
-
-                                    <!-- Comprovante de serviço -->
-                                    {% if servico.comprovante != "" %}
-                                        <td> <a href="/media/{{ servico.comprovante }}"> Comprovante </a> </td> 
-                                    {% else %}
-                                        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> - </strong> </td> 
-                                    {% endif %}
-
-
-                                    <!-- Observação enviada pelo o prestador de serviço --> 
-                                    {% if servico.observacao != "" %}
-                                        <td> 
-                                            <a href="" data-toggle="modal" data-target="#{{servico.id}}1">
-                                                Mensagem 
-                                            </a> 
-                                        </td>
-                                        
-
-
-                                        
-                                    {% else %}
-                                        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> - </strong> </td>
-                                    {% endif %}
-                                    
-
-                                    <!-- Modal da Mensagem -->
+                                    <!-- Modal da Mensagem --> 
                                     <div class="modal fade" id="{{servico.id}}" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
@@ -157,35 +125,83 @@
                                         </div>
                                     </div>
 
-                                    <!-- Modal da Observação -->
-                                    <div class="modal fade" id="{{servico.id}}1" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
 
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle"> Observação Liber </h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
+                                    <!-- Situação da solicitação --> 
+                                    <td> {{ servico.status }} </td>
+
+
+                                    <!-- Comprovante de serviço -->
+                                    {% if servico.comprovante != "" %}
+                                        <td> <a href="/media/{{ servico.comprovante }}"> Comprovante </a> </td> 
+                                    {% else %}
+                                        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> - </strong> </td> 
+                                    {% endif %}
+
+
+                                    <!-- Observação enviada pelo o prestador de serviço --> 
+                                    {% if servico.observacao != "" %}
+                                        <td> 
+                                            <a href="" data-toggle="modal" data-target="#{{servico.id}}1">
+                                                Mensagem 
+                                            </a> 
+                                        </td>
+
+                                        <!-- Modal da Observação -->
+                                        <div class="modal fade" id="{{servico.id}}1" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle"> Observação Liber </h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        {{ servico.observacao }} 
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
+                                                    </div>
+
                                                 </div>
-
-                                                <div class="modal-body">
-                                                    {{ servico.observacao }} 
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
-                                                </div>
-
                                             </div>
                                         </div>
-                                    </div>
-
+                                    {% else %}
+                                        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> - </strong> </td>
+                                    {% endif %}
                                 </tr>
                             {% endif %}
                         {% endfor %}
                     </tbody>
                 </table>
+
+                <!-- Modal da Mensagem --> 
+                <div class="modal fade" id="123" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle"> Mensagem enviada </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                Teste teste teste teste 
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         
