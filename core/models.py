@@ -1,3 +1,4 @@
+from datetime import datetime
 import uuid
 from stdimage.models import StdImageField 
 from django import forms
@@ -72,7 +73,8 @@ def get_file_path(__instance, filename):
 
 # Class base que será utilizada em todas as tabelas do Banco de Dados 
 class Base(models.Model):
-    criado = models.DateField('Criação', auto_now_add=True)
+    data_criado = models.CharField('Data_Criado', default=datetime.now().strftime(r"%d/%m/%Y"), max_length=15) 
+    hora_criado = models.TimeField('Hora_Criado', auto_now_add=True)
     modificado = models.DateField('Atualização', auto_now=True)
     ativo = models.BooleanField('Ativo?', default=True)
 
@@ -140,12 +142,22 @@ class Funcionario(Base):
 
 
 class SolicitacaoServico(Base):
+    STATUS_CHOICES = (
+        ('Em_Aberto', 'Em_Aberto'),
+        ('Em_Andamento', 'Em_Andamento'),
+        ('Concluida', 'Concluida')
+    )
+
     crm = models.CharField('Crm', max_length=13)
     nome = models.CharField('Nome', max_length=100)
     plano = models.CharField('Plano', max_length=7)
     tipo_de_servico = CharField('Tipo de Serviço', max_length=100)
     arquivo = models.FileField('Arquivo', upload_to=get_file_path, blank=True)
     mensagem = models.TextField('Mensagem', max_length=450)
+
+    status = models.CharField('Status', max_length=13, choices=STATUS_CHOICES, default="Em_Aberto", blank=True)
+    comprovante = models.FileField('Comprovante Serviço', upload_to=get_file_path, blank=True)
+    observacao = models.CharField('Observação', max_length=150, blank=True)
 
     class Meta:
         verbose_name = 'Solicitação de Serviço'

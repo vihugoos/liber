@@ -35,5 +35,5 @@ class FuncionarioAdmin(admin.ModelAdmin):
 
 @admin.register(SolicitacaoServico)
 class SolicitacaoServicoAdmin(admin.ModelAdmin):
-    list_display = ('crm', 'nome', 'plano', 'tipo_de_servico', 'criado', 'ativo')
+    list_display = ('crm', 'nome', 'plano', 'tipo_de_servico', 'data_criado', 'hora_criado', 'ativo')
 

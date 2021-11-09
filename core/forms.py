@@ -53,6 +53,5 @@ class ContatoForm(forms.Form):
 class ServicoModelForm(forms.ModelForm):
     class Meta:
         model = SolicitacaoServico
-        fields = ['crm', 'nome', 'plano', 'tipo_de_servico', 'arquivo', 'mensagem']
-
+        fields = ['crm', 'nome', 'plano', 'tipo_de_servico', 'arquivo', 'mensagem', 'status', 'comprovante', 'observacao']
 

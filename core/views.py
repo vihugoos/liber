@@ -2,7 +2,7 @@ from typing import overload
 from django.views.generic import FormView, TemplateView
 from django.urls import reverse_lazy
 from django.contrib import messages
-from .models import Servico, Funcionario, CustomUsuario
+from .models import Servico, Funcionario, CustomUsuario, SolicitacaoServico
 from .forms import ContatoForm, ServicoModelForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -46,4 +46,12 @@ class SolicitacaoView(LoginRequiredMixin, FormView):
         messages.error(self.request, 'Erro ao solicitar solicitação, tente novamente.')
         return super(SolicitacaoView, self).form_invalid(form, *args, **kwargs)
 
+
+class PerfilView(TemplateView):
+    template_name = 'perfil.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(PerfilView, self).get_context_data(**kwargs)
+        context['servicos_solicitados'] = SolicitacaoServico.objects.all()
+        return context
 

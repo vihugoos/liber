@@ -18,15 +18,15 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Olá, {{ user.first_name }} </a> 
+                            <a class="nav-link" href="{% url 'perfil' %}"> Meu perfil </a> 
                         </li>
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="#solicitacao_form"> Solicite um serviço </a>
+                            <a class="nav-link" href="#solicitacao"> Solicitar Serviço </a>
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}"> Voltar ao inicio </a>
+                            <a class="nav-link" href="{% url 'index' %}"> Inicio </a>
                         </li>
                     </ul>
                     </ul>
@@ -38,7 +38,7 @@
     </header>
 
     <!-- Seção com o formulário para preenchimento --> 
-    <section id="contact" class="section-padding bg-gray"> 
+    <section id="solicitacao" class="section-padding bg-gray"> 
     <div class="container">
         
         <div class="section-header text-center"> 
@@ -97,10 +97,10 @@
                                     <label for="tipo_de_servico"> Selecione o serviço desejado </label>
                                     <select class="form-control" id="tipo_de_servico" name="tipo_de_servico" data-error="Select your service" required>
                                         <option> Home </option>
-                                        <option> Veiculo </option>
-                                        <option> Office Boy </option>
+                                        <option> Veículo </option>
+                                        <option> Office_Boy </option>
                                         <option> Agendamentos </option>
-                                        <option> Outro </option>
+                                        <option> Outros </option>
                                     </select>
                                     <div class="help-block with-errors"></div>
                                 </div> 
@@ -121,9 +121,7 @@
                                 </div>
 
                                 <div class="submit-button text-left">
-                                    <button class="btn btn-common" id="form-submit" type="submit">
-                                        SOLICITAR 
-                                    </button>
+                                    <button class="btn btn-common" id="form-submit" type="submit"> SOLICITAR </button>
                                     <a class="btn btn-secondary" href="{% url 'index' %}"> CANCELAR </a>
                                     <div id="msgSubmit" class="h3 text-center hidden"></div> 
                                     <div class="clearfix"></div> 
