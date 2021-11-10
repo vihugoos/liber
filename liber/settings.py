@@ -140,13 +140,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'
 
-
-# Caso tentam acessar a página de solicitação sem estar logado, será redirecionado a página de login 
-LOGIN_URL = '/admin/'
-
-LOGIN_REDIRECT_URL = 'https://www.google.com/'
 
 # E-mail teste console
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

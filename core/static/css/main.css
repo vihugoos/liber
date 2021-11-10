@@ -1423,3 +1423,14 @@ textarea {
   font-size: larger;
 }
 
+.form-signin {
+  width: 300px;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+

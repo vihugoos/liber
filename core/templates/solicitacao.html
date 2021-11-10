@@ -18,15 +18,15 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'perfil' %}"> Meu perfil </a> 
+                            <a class="nav-link" href="{% url 'index' %}"> Inicio </a>
                         </li>
 
                         <li class="nav-item active">
                             <a class="nav-link" href="#solicitacao"> Solicitar Serviço </a>
-                        </li>
-                        
+                        </li>  
+
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}"> Inicio </a>
+                            <a class="nav-link" href="{% url 'perfil' %}"> Meu perfil </a> 
                         </li>
                     </ul>
                     </ul>
@@ -42,7 +42,7 @@
     <div class="container">
         
         <div class="section-header text-center"> 
-            <br><br> <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s"> Solicite um serviço, {{ user.first_name }}  </h2>
+            <br><br> <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s"> Solicite um serviço </h2>
             <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
 

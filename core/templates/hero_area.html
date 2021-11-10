@@ -6,14 +6,26 @@
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 <div class="contents">
-                    <h2 class="head-title"> Liber - Assessoria & Soluções </h2>
-                    <p> 
-                        Nós somos uma empresa de assessoria especializada em profissionais médicos, na qual oferecemos uma gama de serviços com o objetivo de preservar o maior ativo de nossos cliente: o tempo. Venha conhecer o que de melhor podemos proporcionar. 
-                    </p>
-                    <div class="header-button">
-                        <a href="#contact" class="btn btn-common"> Entre em contato </i></a>
-                        <a href="#services" class="btn btn-border video-popup"> Saiba mais </i></a>
-                    </div>
+
+                    {% if user.is_authenticated %}
+                        <h2 class="head-title"> Olá, {{ user.first_name }} </h2>
+
+                        <p> 
+                            Está precisando de algum serviço hoje?! Estamos aqui para o que precisar. 
+                        </p> 
+
+                        <div class="header-button">
+                            <a href="{% url 'solicitacao' %}" class="btn btn-common"> Solicitar Serviço </i></a>
+                            <a href="#services" class="btn btn-border video-popup"> Saiba mais </i></a>
+                        </div>
+                    {% else %}
+                        <h2 class="head-title"> Liber - Assessoria & Soluções </h2>
+
+                        <p> 
+                            Nós somos uma empresa de assessoria especializada em profissionais médicos, na qual oferecemos uma gama de serviços com o objetivo de preservar o maior ativo de nossos cliente: o tempo. Venha conhecer o que de melhor podemos proporcionar. 
+                        </p>
+                    {% endif %}
+
                 </div>
             </div>
 
@@ -25,5 +37,4 @@
         </div> 
     </div> 
 </div>
-<!-- Hero Area End -->
 

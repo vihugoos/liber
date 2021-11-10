@@ -18,11 +18,11 @@
                     
                     {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'perfil' %}"> Olá, {{ user.first_name }} </a>
+                            <a class="nav-link" href="{% url 'perfil' %}"> Meu perfil </a>
                         </li>
                     {% else %}
                         <li class="nav-item">
-                            <a class="nav-link" href="https://liber-project.herokuapp.com/admin/"> Login Sistema </a>
+                            <a class="nav-link" href="{% url 'login' %}"> Login Sistema </a>
                         </li>
                     {% endif %}
 
@@ -51,6 +51,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact"> Contato </a>
                     </li>
+
+                    {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'logout' %}"> Sair </a>
+                        </li>
+                    {% endif %}
                 </ul>
                 </ul>
             </div>
