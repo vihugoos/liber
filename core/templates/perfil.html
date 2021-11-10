@@ -22,7 +22,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"> Meu perfil </a> 
+                            <a class="nav-link active" href="#perfil"> Meu perfil </a> 
                         </li>
 
                         <li class="nav-item">
@@ -101,34 +101,17 @@
 
                                     <!-- Exibir a mensagem enviada pelo o cliente na solicitação --> 
                                     <td> 
-                                        <a href="" data-toggle="modal" data-target="#{{servico.id}}">
-                                            Mensagem 
-                                        </a> 
+                                        <a href="#" id="{{ servico.id }}"> Mensagem </a>
                                     </td> 
                                     
-                                    <!-- Modal da Mensagem --> 
-                                    <div class="modal fade" id="{{servico.id}}" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle"> Mensagem enviada </h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-
-                                                <div class="modal-body">
-                                                    {{ servico.mensagem }}
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <script> 
+                                        $("#{{ servico.id }}").click(function() {
+                                            swal({
+                                                text: "{{ servico.mensagem }}",
+                                                button: "Fechar",
+                                            });
+                                        });
+                                    </script>
 
 
                                     <!-- Situação da solicitação --> 
@@ -146,34 +129,17 @@
                                     <!-- Observação enviada pelo o prestador de serviço --> 
                                     {% if servico.observacao != "" %}
                                         <td> 
-                                            <a href="" data-toggle="modal" data-target="#{{servico.id}}1">
-                                                Mensagem 
-                                            </a> 
+                                            <a href="#" id="{{ servico.id }}1"> Mensagem </a>
                                         </td>
 
-                                        <!-- Modal da Observação -->
-                                        <div class="modal fade" id="{{servico.id}}1" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content">
-
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLongTitle"> Observação Liber </h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-
-                                                    <div class="modal-body">
-                                                        {{ servico.observacao }} 
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <script> 
+                                            $("#{{ servico.id }}1").click(function() {
+                                                swal({
+                                                    text: "{{ servico.observacao }}",
+                                                    button: "Fechar",
+                                                });
+                                            });
+                                        </script>
                                     {% else %}
                                         <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> - </strong> </td>
                                     {% endif %}
@@ -185,9 +151,7 @@
             </div>
         </div>
         
-        
-        <br>
-
+        <br> 
 
         <!-- Solicitações concluidas -->
         <div class="container">
@@ -238,33 +202,17 @@
 
                                     <!-- Exibir a mensagem enviada pelo o cliente na solicitação --> 
                                     <td> 
-                                        <a href="" data-toggle="modal" data-target="#{{servico.id}}">
-                                            Mensagem 
-                                        </a> 
-                                    </td>
+                                        <a href="#" id="{{ servico.id }}"> Mensagem </a>
+                                    </td> 
                                     
-                                    <div class="modal fade" id="{{servico.id}}" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle"> Mensagem enviada </h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-
-                                                <div class="modal-body">
-                                                    {{ servico.mensagem }}
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <script> 
+                                        $("#{{ servico.id }}").click(function() {
+                                            swal({
+                                                text: "{{ servico.mensagem }}",
+                                                button: "Fechar",
+                                            });
+                                        });
+                                    </script>
 
 
                                     <!-- Situação da solicitação --> 
@@ -282,33 +230,18 @@
                                     <!-- Observação enviada pelo o prestador de serviço --> 
                                     {% if servico.observacao != "" %}
                                         <td> 
-                                            <a href="" data-toggle="modal" data-target="#{{servico.id}}1">
-                                                Mensagem 
-                                            </a> 
+                                            <a href="#" id="{{ servico.id }}1"> Mensagem </a>
                                         </td>
-                                        
-                                        <div class="modal fade" id="{{servico.id}}1" tabindex="-1" role="dialog" aria-labelledby="Mensagem Serviço" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content">
 
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLongTitle"> Observação Liber </h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-
-                                                    <div class="modal-body">
-                                                        <p> {{ servico.observacao }} </p>
-                                                    </div>
-
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Fechar </button>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <script> 
+                                            $("#{{ servico.id }}1").click(function() {
+                                                swal({
+                                                    text: "{{ servico.observacao }}",
+                                                    icon: "success",
+                                                    button: "Fechar",
+                                                });
+                                            });
+                                        </script>
                                     {% else %}
                                         <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> - </strong> </td>
                                     {% endif %}

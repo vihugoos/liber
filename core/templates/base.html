@@ -30,6 +30,10 @@
         
         <!-- Responsive Style -->
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+        <!-- Para os alertas personalizados Sweet (necessitam ser carregados no head) -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="{% static 'js/jquery-min.js' %}"></script>
     </head>
 
     <body>
@@ -47,8 +51,7 @@
             <div class="loader" id="loader-1"></div>
         </div>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="{% static 'js/jquery-min.js' %}"></script>
+        <!-- jQuery first (header) , then Popper.js, then Bootstrap JS -->
         <script src="{% static 'js/popper.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
         <script src="{% static 'js/owl.carousel.min.js' %}"></script>

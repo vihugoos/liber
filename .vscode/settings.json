@@ -3,6 +3,7 @@
         "disp",
         "signin",
         "Solic",
+        "swal",
         "wsgi"
     ]
 }
