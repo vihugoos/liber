@@ -8,21 +8,18 @@
         <div class="container">
 
             <!-- Brand and toggle get grouped for better mobile display --> 
-            <a href="{% url 'index' %}" class="navbar-brand"> <img src="{% static 'img/logo-liber.png' %}" alt=""> </a>       
+            <a href="{% url 'index' %}" class="navbar-brand"> <img src="{% static 'img/logo-liber.png' %}" alt=""> </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="lni-menu"></i>
-            </button>
+            </button> 
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
                     
-                    {% if user.is_authenticated %}
+                    {% if user.is_authenticated %} 
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'perfil' %}"> Meu perfil </a>
-                        </li>
-                    {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'login' %}"> Login </a>
                         </li>
                     {% endif %}
 
@@ -38,11 +35,9 @@
                         <a class="nav-link" href="#pricing"> Planos </a>
                     </li>
 
-                    <!-- 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#team"> Equipe </a>
-                    </li>
-                    -->
+                    </li> -->
                     
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonial"> Clientes </a>
@@ -52,21 +47,24 @@
                         <a class="nav-link" href="#contact"> Contato </a>
                     </li>
 
-                    {% if user.is_authenticated %}
+                    {% if user.is_authenticated %} 
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'logout' %}"> Sair </a>
                         </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}"> <strong> Login </strong> </a>                   
+                        </li>
                     {% endif %}
-                </ul>
                 </ul>
             </div>
 
         </div>
     </nav>
-    <!-- Navbar End -->
 
     <br> <br>
-    <!-- Exibir as mensagens do formulário --> 
+
+    <!-- Exibir as mensagens do formulário do envio de e-mail 'Contato' --> 
     <div class="container"> 
         {% if messages %}
             {% for m in messages %}
