@@ -62,6 +62,15 @@
         <script src="{% static 'js/main.js' %}"></script>
         <script src="{% static 'js/form-validator.min.js' %}"></script>
         <script src="{% static 'js/contact-form-script.min.js' %}"></script>
+
+        <!-- Função para não deixar o cliente apertar a tecla 'Enter' no text-area do formulário -->
+        <script>
+            $('#mensagem').keypress(function(e) {
+                if(e.which == 13) {
+                    e.preventDefault();
+                }
+            });
+        </script>
     </body>
 
 </html>

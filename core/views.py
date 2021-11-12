@@ -34,16 +34,15 @@ class SolicitacaoView(LoginRequiredMixin, FormView):
 
     def get_context_data(self, **kwargs):
         context = super(SolicitacaoView, self).get_context_data(**kwargs)
-        # context['usuarios'] = CustomUsuario.objects.all()
         return context
 
     def form_valid(self, form, *args, **kwargs):
         form.save()
-        messages.success(self.request, 'Solicitação realizada com sucesso!')
+        messages.success(self.request, 'Solicitação enviada com sucesso!')
         return super(SolicitacaoView, self).form_valid(form, *args, **kwargs)
 
     def form_invalid(self, form, *args, **kwargs):
-        messages.error(self.request, 'Erro ao solicitar solicitação, tente novamente.')
+        messages.error(self.request, 'Erro ao enviar solicitação, por favor, tente novamente.')
         return super(SolicitacaoView, self).form_invalid(form, *args, **kwargs)
 
 
