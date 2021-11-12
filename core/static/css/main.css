@@ -1438,3 +1438,7 @@ textarea {
   font-size: medium;
 }
 
+.dropdown-toggle {
+  border-radius: 5%;
+}
+
