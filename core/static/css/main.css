@@ -1434,3 +1434,7 @@ textarea {
   margin-top: 10%;
 }
 
+textarea {
+  font-size: medium;
+}
+
