@@ -1434,9 +1434,7 @@ textarea {
   margin-top: 10%;
 }
 
-input, textarea{
-  transform: scale(0.875);
-  transform-origin: left center;
-  margin-right: -14.28%;
+input, textarea {
+  font-size: 16px;
 }
 
