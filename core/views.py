@@ -13,8 +13,6 @@ class IndexView(FormView):
 
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
-        context['servicos'] = Servico.objects.order_by('?').all()
-        context['funcionarios'] = Funcionario.objects.order_by('?').all()
         return context
 
     def form_valid(self, form, *args, **kwargs):
@@ -51,6 +49,8 @@ class PerfilView(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(PerfilView, self).get_context_data(**kwargs)
-        context['servicos_solicitados'] = SolicitacaoServico.objects.all()
+        context['servicos_solicitados'] = SolicitacaoServico.objects.filter(crm=self.request.user.crm)
+        print(f"Usuário atualmente logado no sistema: {self.request.user.first_name}")
+        print(f"CRM: {self.request.user.crm}")
         return context
-
+    
