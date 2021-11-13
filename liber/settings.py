@@ -94,7 +94,8 @@ DATABASES = {
     'default': dj_database_url.config()
 }
 
-# Password validation
+
+# Password validation 
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -126,7 +127,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+
+# Static files (CSS, JavaScript, Images) 
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
@@ -134,18 +136,17 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Default primary key field type
+
+# Default primary key field type 
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Redirecionamentos padrão para o login 
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'
 
-
-# E-mail teste console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # E-mail Produção
 """EMAIL_HOST = 'localhost'
@@ -154,6 +155,9 @@ EMAIL_PORT = 587
 EMAIL_USE_TSL = True
 EMAIL_HOST_PASSWORD = 'liber'
 DEFAULT_FROM_EMAIL = 'contato@liber.com.br'"""
+
+# E-mail teste console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Váriaveis para usar meu CustomUsuario como padrão para o gerenciamento de Users

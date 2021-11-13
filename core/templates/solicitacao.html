@@ -65,11 +65,11 @@
                             {% endif%}
                         </div>
 
-                        <div class="row">
+                        <div class="row"> 
 
                             <div class="col-md-6" hidden>
                                 <div class="form-group">
-                                    <label for="crm"> Insira seu CRM </label>
+                                    <label for="crm"> CRM </label>
                                     <input type="text" class="form-control" id="crm" name="crm" placeholder="CRM" required data-error="Please enter your crm" autocomplete="no" value="{{ user.crm }}">
                                     <div class="help-block with-errors"></div>
                                 </div>                                 
@@ -78,7 +78,7 @@
 
                             <div class="col-md-6" hidden>
                                 <div class="form-group">
-                                    <label for="nome"> Insira seu Nome </label>
+                                    <label for="nome"> Nome </label>
                                     <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Please enter your name" autocomplete="no" value="{{ user.get_full_name }}">
                                     <div class="help-block with-errors"></div>
                                 </div>                                 
@@ -86,7 +86,7 @@
 
                             <div class="col-md-6" hidden>
                                 <div class="form-group">
-                                    <label for="plano"> Insira seu plano </label>
+                                    <label for="plano"> Plano Contratado </label>
                                     <input type="text" class="form-control" id="plano" name="plano" placeholder="Plano" required data-error="Please enter your plan" autocomplete="no" value="{{ user.plano }}">
                                     <div class="help-block with-errors"></div>
                                 </div>                                 
