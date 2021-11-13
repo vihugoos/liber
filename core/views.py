@@ -11,10 +11,6 @@ class IndexView(FormView):
     form_class = ContatoForm
     success_url = reverse_lazy('index')
 
-    def get_context_data(self, **kwargs):
-        context = super(IndexView, self).get_context_data(**kwargs)
-        return context
-
     def form_valid(self, form, *args, **kwargs):
         form.send_mail()
         messages.success(self.request, 'E-mail enviado com sucesso!')
@@ -29,10 +25,6 @@ class SolicitacaoView(LoginRequiredMixin, FormView):
     template_name = 'solicitacao.html'
     form_class = ServicoModelForm
     success_url = reverse_lazy('solicitacao')
-
-    def get_context_data(self, **kwargs):
-        context = super(SolicitacaoView, self).get_context_data(**kwargs)
-        return context
 
     def form_valid(self, form, *args, **kwargs):
         form.save()
