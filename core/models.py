@@ -53,7 +53,7 @@ class CustomUsuario(AbstractUser):
     rg = models.CharField('RG', max_length=14)
     celular = models.CharField('Celular', max_length=12)
     plano = models.CharField('Plano', max_length=7, choices=PLANO_CHOICES)
-    is_staff = models.BooleanField('Membro da equipe?', default=True)
+    is_staff = models.BooleanField('Membro da equipe?', default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name', 'crm', 'cpf', 'rg', 'celular', 'plano']
@@ -147,13 +147,17 @@ class SolicitacaoServico(Base):
         ('Concluida', 'Concluida')
     )
 
+    # Dados de cadastro capturados de forma automática no template 
     crm = models.CharField('Crm', max_length=13)
     nome = models.CharField('Nome', max_length=100)
     plano = models.CharField('Plano', max_length=7)
+
+    # Campos preenchidos pelo cliente no formulário 
     tipo_de_servico = CharField('Tipo de Serviço', max_length=100)
     arquivo = models.FileField('Arquivo', upload_to=get_file_path, blank=True)
     mensagem = models.TextField('Mensagem', max_length=450)
 
+    # Campos para serem preenchindos pelo o responsável do serviço (Liber)
     status = models.CharField('Status', max_length=13, choices=STATUS_CHOICES, default="Em_Aberto", blank=True)
     finalizado = models.BooleanField('Finalizado?', default=False)
     comprovante = models.FileField('Comprovante Serviço', upload_to=get_file_path, blank=True)

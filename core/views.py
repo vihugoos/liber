@@ -50,7 +50,7 @@ class PerfilView(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super(PerfilView, self).get_context_data(**kwargs)
         context['servicos_solicitados'] = SolicitacaoServico.objects.filter(crm=self.request.user.crm)
-        print(f"Usuário atualmente logado no sistema: {self.request.user.first_name}")
-        print(f"CRM: {self.request.user.crm}")
+        print(f"[PerfilView] - Usuário atualmente logado no sistema: {self.request.user.first_name}")
+        print(f"[PerfilView] - CRM: {self.request.user.crm}")
         return context
     
