@@ -765,9 +765,9 @@ hr {
   }
 }
 
-/* ----------------- */
+/* ----------------------------------- */ 
 
-/* Para mobile */
+/* Para mobile */ 
 @media screen and (max-width: 750px) {
   #hero-area {
     background-image: url(../img/hero-area.svg);
@@ -779,10 +779,7 @@ hr {
     overflow: hidden;
     padding: 180px 0 80px;
   }
-}
 
-/* Para mobile */
-@media screen and (max-width: 750px) {
   .img-hero {
     background-image: url(../img/intro-mobile.png);
     background-position: center center;
@@ -793,6 +790,8 @@ hr {
     padding: 180px 0 80px;
   }
 }
+
+/* ----------------------------------- */ 
 
 #hero-area .contents .head-title {
   color: #222222;
