@@ -10,7 +10,7 @@
                     {% if user.is_authenticated %}
                         <h2 class="head-title"> Olá, {{ user.first_name }} </h2>
 
-                        <p> 
+                        <p class="text-hero"> 
                             Está precisando de algum serviço hoje?! Estamos aqui para o que precisar. 
                         </p> 
 
@@ -21,7 +21,7 @@
                     {% else %}
                         <h2 class="head-title"> Liber - Assessoria & Soluções </h2>
 
-                        <p> 
+                        <p class="text-hero"> 
                             Nós somos uma empresa de assessoria especializada em profissionais médicos, na qual oferecemos uma gama de serviços com o objetivo de preservar o maior ativo de nossos cliente: o tempo. Venha conhecer o que de melhor podemos proporcionar. 
                         </p>
                     {% endif %}
@@ -30,8 +30,8 @@
             </div>
 
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                <div class="intro-img">
-                    <img class="img-fluid" src="{% static 'img/intro-mobile.png' %}" alt="">
+                <div class="intro-img img-hero">
+                    <!-- <img class="img-fluid" src="{% static 'img/intro-mobile.png' %}" alt=""> -->
                 </div>            
             </div>
         </div> 

@@ -746,15 +746,52 @@ hr {
 /* ==========================================================================
 3. Hero Area
 ========================================================================== */
-#hero-area {
-  background-image: url(../img/hero-area.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 650px;
-  position: relative;
-  overflow: hidden;
-  padding: 180px 0 80px;
+
+/* Para tables/notebooks */ 
+@media screen and (min-width: 750px) {
+  #hero-area {
+    background-image: url(../img/medico.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding: 180px 0 80px;
+  }
+
+  .text-hero {
+    color: #01030F;
+  }
+}
+
+/* ----------------- */
+
+/* Para mobile */
+@media screen and (max-width: 750px) {
+  #hero-area {
+    background-image: url(../img/hero-area.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding: 180px 0 80px;
+  }
+}
+
+/* Para mobile */
+@media screen and (max-width: 750px) {
+  .img-hero {
+    background-image: url(../img/intro-mobile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 250px;
+    overflow: hidden;
+    padding: 180px 0 80px;
+  }
 }
 
 #hero-area .contents .head-title {
