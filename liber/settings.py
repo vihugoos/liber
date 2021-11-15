@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lm!fp@xt2ntle(v4=i5rymvew^jykpdqejr0eu%5mpqc68-rq+'
 
 # SECURITY WARNING: don't run with debug turned on in production! 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'liber.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'fusion',
@@ -88,12 +88,12 @@ WSGI_APPLICATION = 'liber.wsgi.application'
         'HOST': 'localhost',
         'PORT': '5432'
     }
-}"""
-
-DATABASES = {
-    'default': dj_database_url.config()
 }
 
+"""DATABASES = {
+    'default': dj_database_url.config()
+}
+"""
 
 # Password validation 
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -165,14 +165,13 @@ AUTH_USER_MODEL = 'core.CustomUsuario'
 
 
 # Recursos Extras de Segurança do Django
-SECURE_HSTS_SECONDS = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_BROWSER_XSS_FILTER = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-CSRF_COOKIE_HTTPONLY = True
-X_FRAME_OPTIONS = 'DENY'
-
-SECURE_SSL_REDIRECT = True
+# SECURE_HSTS_SECONDS = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# SECURE_CONTENT_TYPE_NOSNIFF = True
+# SECURE_BROWSER_XSS_FILTER = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_HTTPONLY = True
+# X_FRAME_OPTIONS = 'DENY'
+# SECURE_SSL_REDIRECT = True
 
