@@ -748,7 +748,7 @@ hr {
 ========================================================================== */
 
 /* Para tables/notebooks */ 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) { */
   #hero-area {
     background-image: url(../img/medico.jpg);
     background-position: center center;
@@ -763,12 +763,12 @@ hr {
   .text-hero {
     color: #01030F;
   }
-}
+/* } */
 
 /* ----------------------------------- */ 
 
 /* Para mobile */ 
-@media screen and (max-width: 750px) {
+/* @media screen and (max-width: 750px) {
   #hero-area {
     background-image: url(../img/hero-area.svg);
     background-position: center center;
@@ -789,7 +789,7 @@ hr {
     overflow: hidden;
     padding: 180px 0 80px;
   }
-}
+} */
 
 /* ----------------------------------- */ 
 
