@@ -163,3 +163,16 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Váriaveis para usar meu CustomUsuario como padrão para o gerenciamento de Users
 AUTH_USER_MODEL = 'core.CustomUsuario'
 
+
+# Recursos Extras de Segurança do Django
+SECURE_HSTS_SECONDS = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_BROWSER_XSS_FILTER = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
+X_FRAME_OPTIONS = 'DENY'
+
+SECURE_SSL_REDIRECT = True
+
