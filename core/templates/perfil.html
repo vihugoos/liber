@@ -52,11 +52,13 @@
         </div>
 
 
-        <!-- Solicitações em abertas --> 
+        <!-- >>>> Solicitações em abertas --> 
         <div class="container">
             <h5 class="title-servicos"> Solicitações Pendentes. <i class="fas fa-exclamation-circle"></i> </h5> 
+
             <div class="table-responsive"> 
                 <table class="table table-striped table-solicitacoes">
+
                     <thead>
                         <tr>
                             <th scope="col"> IDº </th>
@@ -103,7 +105,8 @@
                                     <td> 
                                         <a href="#" id="{{ servico.id }}"> Mensagem </a>
                                     </td> 
-                                    
+
+                                    <!-- Mensagem do cliente --> 
                                     <script> 
                                         $("#{{ servico.id }}").click(function() {
                                             swal({
@@ -118,7 +121,7 @@
                                     <td> {{ servico.status }} </td>
 
 
-                                    <!-- Comprovante de serviço -->
+                                    <!-- Comprovante de serviço --> 
                                     {% if servico.comprovante != "" %}
                                         <td> <a href="/media/{{ servico.comprovante }}"> Comprovante </a> </td> 
                                     {% else %}
@@ -148,17 +151,25 @@
                             {% endif %}
                         {% endfor %}
                     </tbody>
+
                 </table>
             </div>
         </div>
         
-        <br> 
 
-        <!-- Solicitações concluidas -->
+        <br> 
+        <!-- ####################################################################### -->
+        <!-- ####################################################################### -->
+        <!-- ####################################################################### -->
+
+
+        <!-- >>>> Solicitações concluidas --> 
         <div class="container">
             <h5 class="title-servicos"> Solicitações Concluídas. <i class="fas fa-user-check"></i> </h5>
+
             <div class="table-responsive">
                 <table class="table table-striped table-solicitacoes">
+
                     <thead>
                         <tr>
                             <th scope="col"> IDº </th>
@@ -206,6 +217,7 @@
                                         <a href="#" id="{{ servico.id }}"> Mensagem </a>
                                     </td> 
                                     
+                                    <!-- Mensagem do cliente -->
                                     <script> 
                                         $("#{{ servico.id }}").click(function() {
                                             swal({
@@ -251,6 +263,7 @@
                             {% endif %}
                         {% endfor %}
                     </tbody>
+
                 </table>
             </div>
         </div>

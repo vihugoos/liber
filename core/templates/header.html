@@ -1,9 +1,7 @@
 {% load static %} 
 
-<!-- Header Area wrapper --> 
 <header id="header-wrap">
 
-    <!-- Navbar Start --> 
     <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
 
@@ -56,6 +54,7 @@
                             <a class="nav-link" href="{% url 'login' %}"> <strong> Login </strong> </a>                   
                         </li>
                     {% endif %}
+
                 </ul>
             </div>
 
@@ -64,7 +63,7 @@
 
     <br> <br>
 
-    <!-- Exibir as mensagens do formulário do envio de e-mail 'Contato' --> 
+    <!-- Exibir as mensagens do formulário da sessão de e-mail 'Contato' --> 
     <div class="container"> 
         {% if messages %}
             <br> 

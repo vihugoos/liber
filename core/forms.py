@@ -4,7 +4,6 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from .models import CustomUsuario, SolicitacaoServico
 
 class CustomUsuarioCreateForm(UserCreationForm):
-
     class Meta:
         model = CustomUsuario
         fields = ('first_name', 'last_name', 'crm', 'cpf', 'rg', 'celular', 'plano')
@@ -20,7 +19,6 @@ class CustomUsuarioCreateForm(UserCreationForm):
     
 
 class CustomUsuarioChangeForm(UserChangeForm):
-
     class Meta:
         model = CustomUsuario
         fields = ('first_name', 'last_name', 'crm', 'cpf', 'rg', 'celular', 'plano')

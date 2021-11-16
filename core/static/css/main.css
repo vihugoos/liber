@@ -1476,6 +1476,18 @@ textarea {
 }
 
 .dropdown-toggle {
-  border-radius: 5%;
+  border-color: transparent;
+  color: #4F4F4F;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.fas {
+  font-size: 18px;
+}
+
+.text-list {
+  color: #4F4F4F;
+  font-size: 15px;
 }
 

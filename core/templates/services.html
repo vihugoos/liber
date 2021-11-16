@@ -1,17 +1,18 @@
-{% load static %} 
+{% load static %}
 
-<!-- Services Section --> 
 <section id="services" class="section-padding">
     <div class="container">
         
         <div class="section-header text-center">
-            <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s"> Conheça nossos serviços </h2>
+            <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s"> Nossos serviços </h2>
             <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
 
-        <div class="row"> 
+        <div class="row">
 
-            <!----------------------------- SERVIÇO HOME ---------------------------------> 
+            <!-- Todo conteudo dos serviços são estáticos, por isso grande qtd de código HTML --> 
+
+            <!-- >>>> SERVIÇO HOME --> 
             <div class="col-md-6 col-lg-4 col-xs-12">
                 <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
 
@@ -22,9 +23,7 @@
 
                     <!-- Nome/Descrição do Serviço -->
                     <div class="services-content">
-                        <h3> 
-                            <a> Home </a>
-                        </h3>
+                        <h3> <a> Home </a> </h3>
 
                         <p> 
                             Oferecemos um serviço para resolver qualquer problema/necessidade caseiras. 
@@ -38,28 +37,31 @@
                 </div>
             </div> 
 
-            <!--------------------------- MODAL SERVIÇO HOME ------------------------------> 
+            <!-- >>>>  MODAL SERVIÇO HOME --> 
             <div class="modal fade" id="modal_home" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
+                    
                     <div class="modal-content">
 
                         <!-- Cabeçalho/Nome Serviço --> 
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                Selecione alguma opção: 
+                                Opções disponiveis:  
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
 
                         <!-- Especificação Serviço -->
                         <div class="modal-body">
                             <ul class="list-group">
+
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFaturas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Faturas
+                                            <strong> 🡆 &nbsp; Pagar Faturas </strong> 
                                         </button>
 
                                         <div class="dropdown-menu" aria-labelledby="dropdownFaturas">
@@ -75,7 +77,7 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Serviços Domesticos
+                                            <strong> 🡆 &nbsp; Serviços Domésticos </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -83,14 +85,14 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Reparos & Reformas 
+                                            <strong> 🡆 &nbsp; Reparos & Reformas  </strong>
                                         </a>
                                 </li>
 
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Contratação de Serviços / Eventos
+                                            <strong> 🡆 &nbsp; Contratar Serviços / Eventos </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -98,24 +100,29 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Frete / Mudanças
+                                            <strong> 🡆 &nbsp; Frete / Mudanças </strong>
                                         </a>
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
 
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            
 
-            <!--------------------------- SERVIÇO VEICULO ---------------------------------> 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+
+
+            <!-- >>>> SERVIÇO VEICULO --> 
             <div class="col-md-6 col-lg-4 col-xs-12">
                 <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
 
@@ -126,9 +133,7 @@
 
                     <!-- Nome/Descrição do Serviço -->
                     <div class="services-content">
-                        <h3>
-                            <a> Veiculo </a>
-                        </h3>
+                        <h3> <a> Veiculo </a> </h3>
 
                         <p> 
                             Desde alinhamento/balanceamento à solicitação de guinchos, todo tipo de suporte! 
@@ -142,28 +147,31 @@
                 </div>
             </div> 
 
-            <!------------------------- MODAL SERVIÇO VEICULO -----------------------------> 
+            <!-- >>>>> MODAL SERVIÇO VEICULO --> 
             <div class="modal fade" id="modal_veiculo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
+
                     <div class="modal-content">
 
                         <!-- Cabeçalho/Nome Serviço --> 
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                Selecione alguma opção: 
+                                Opções disponiveis: 
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
 
                         <!-- Especificação Serviço -->
                         <div class="modal-body">
                             <ul class="list-group">
+
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Oficina / Revisão 
+                                            <strong> 🡆 &nbsp; Automóvel para Oficina </strong> 
                                         </a>
                                     </div>
                                 </li>
@@ -171,14 +179,7 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Seguro / CNH / Multas
-                                        </a>
-                                </li>
-
-                                <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Despacho / Guincho 
+                                            <strong> 🡆 &nbsp; Despacho / Guincho  </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -186,24 +187,38 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Levar a lugar desejado
+                                            <strong>🡆 &nbsp; Seguro / CNH / Multas </strong>
                                         </a>
                                     </div>
                                 </li>
+
+                                <li class="list-group-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
+                                            <strong> 🡆 &nbsp; Levar para lugar desejado </strong>
+                                        </a>
+                                    </div>
+                                </li>
+
                             </ul>
                         </div>
 
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
                         </div>
+
                     </div>
 
                 </div>
             </div>
 
 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+            
 
-            <!-------------------------- SERVIÇO OFFICE BOY -------------------------------> 
+            <!-- >>>> SERVIÇO OFFICE BOY --> 
             <div class="col-md-6 col-lg-4 col-xs-12">
                 <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
 
@@ -214,9 +229,7 @@
 
                     <!-- Nome/Descrição do Serviço -->
                     <div class="services-content">
-                        <h3>
-                            <a> Office-Boy </a>
-                        </h3>
+                        <h3> <a> Office-Boy </a> </h3>
 
                         <p> 
                             Um serviço de Office Boy para atender com rapidez/agilidade a sua necessidade.
@@ -230,28 +243,31 @@
                 </div>
             </div> 
 
-            <!------------------------ MODAL SERVIÇO OFFICE BOY ---------------------------> 
+            <!-- >>>> MODAL SERVIÇO OFFICE BOY --> 
             <div class="modal fade" id="modal_office_boy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
+
                     <div class="modal-content">
 
                         <!-- Cabeçalho/Nome Serviço --> 
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                Selecione alguma opção:  
+                                Opções disponiveis:  
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
 
                         <!-- Especificação Serviço -->
                         <div class="modal-body">
                             <ul class="list-group">
+
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Entrega de Documentos
+                                            <strong> 🡆 &nbsp; Entrega de Documentos </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -259,14 +275,7 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Compras 
-                                        </a>
-                                </li>
-
-                                <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Pagamentos em Bancos
+                                            <strong> 🡆 &nbsp; Buscar Compras  </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -274,24 +283,38 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Serviço de Cartório
+                                            <strong> 🡆 &nbsp; Pagamentos em Bancos </strong>
                                         </a>
                                     </div>
                                 </li>
+
+                                <li class="list-group-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
+                                            <strong> 🡆 &nbsp; Serviços de Cartório </strong>
+                                        </a>
+                                    </div>
+                                </li>
+
                             </ul>
                         </div>
 
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
                         </div>
+
                     </div>
 
                 </div>
             </div>
 
 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
 
-            <!-------------------------- SERVIÇO AGENDAMENTO -------------------------------> 
+
+            <!-- >>>> SERVIÇO AGENDAMENTO --> 
             <div class="col-md-6 col-lg-4 col-xs-12"> 
                 <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
 
@@ -302,9 +325,7 @@
 
                     <!-- Nome/Descrição do Serviço -->
                     <div class="services-content">
-                        <h3>
-                            <a> Agendamentos </a>
-                        </h3>
+                        <h3> <a> Agendamentos </a> </h3>
 
                         <p> 
                             Precisa realizar qualquer tipo de agendamento?! Deixa com a gente!
@@ -318,28 +339,31 @@
                 </div>
             </div> 
 
-            <!------------------------ MODAL SERVIÇO AGENDAMENTO ---------------------------> 
+            <!-- >>>> MODAL SERVIÇO AGENDAMENTO --> 
             <div class="modal fade" id="modal_agendamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
+
                     <div class="modal-content">
 
                         <!-- Cabeçalho/Nome Serviço --> 
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                Selecione alguma opção: 
+                                Opções disponiveis: 
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
 
                         <!-- Especificação Serviço -->
                         <div class="modal-body">
                             <ul class="list-group">
+
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Dentista
+                                            <strong> 🡆 &nbsp; Dentistas </strong> 
                                         </a>
                                     </div>
                                 </li>
@@ -347,14 +371,7 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Médico
-                                        </a>
-                                </li>
-
-                                <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Passagem / Eventos 
+                                            <strong> 🡆 &nbsp; Médicos </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -362,24 +379,38 @@
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Restaurante  
+                                            <strong> 🡆 &nbsp; Passagem / Eventos  </strong>
                                         </a>
                                     </div>
                                 </li>
+
+                                <li class="list-group-item">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
+                                            <strong> 🡆 &nbsp; Restaurantes </strong>  
+                                        </a>
+                                    </div>
+                                </li>
+
                             </ul>
                         </div>
 
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
                         </div>
+
                     </div>
 
                 </div>
             </div>
 
 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
 
-            <!-------------------------- SERVIÇO 'CASO PRECISE' ------------------------------> 
+
+            <!-- >>>> SERVIÇO 'CASO PRECISE' --> 
             <div class="col-md-6 col-lg-4 col-xs-12">
                 <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
 
@@ -390,9 +421,7 @@
 
                     <!-- Nome/Descrição do Serviço -->
                     <div class="services-content">
-                        <h3>
-                            <a> Caso Precise </a>
-                        </h3>
+                        <h3> <a> Caso Precise </a> </h3>
 
                         <p> 
                             Você nos diz qual é o seu problema/necessidade que resolveremos
@@ -406,28 +435,30 @@
                 </div>
             </div> 
 
-            <!--------------------------- MODAL 'CASO PRECISE' --------------------------------> 
+            <!-- >>>> MODAL 'CASO PRECISE' --> 
             <div class="modal fade" id="modal_caso_precise" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
+
                     <div class="modal-content">
 
                         <!-- Cabeçalho/Nome Serviço --> 
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                Selecione alguma opção: 
+                                Opções disponiveis:  
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
 
-                        <!-- Especificação Serviço -->
+                        <!-- Especificação Serviço --> 
                         <div class="modal-body">
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <div class="dropdown">
                                         <a class="btn btn-secondary dropdown-toggle" href="{% url 'solicitacao' %}">
-                                            Solicite um serviço especifico 
+                                            <strong> 🡆 &nbsp; Solicitar serviço especifico &nbsp; <i class="fas fa-star"></i> </strong>
                                         </a>
                                     </div>
                                 </li>
@@ -435,15 +466,20 @@
                         </div>
 
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
                         </div>
                     </div>
+
                 </div>
             </div>
 
 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
 
-            <!--------------------- SERVIÇO COMPROVANTES DE SERVIÇO -------------------------> 
+
+            <!-- >>>> SERVIÇO COMPROVANTES DE SERVIÇO --> 
             <div class="col-md-6 col-lg-4 col-xs-12">
                 <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
 
@@ -454,9 +490,7 @@
 
                     <!-- Nome/Descrição do Serviço -->
                     <div class="services-content">
-                        <h3>
-                            <a> Comprovantes de Serviço </a>
-                        </h3>
+                        <h3> <a> Comprovantes de Serviço </a> </h3>
 
                         <p> 
                             Obter um retorno/andamento de todas as suas solicitações.
@@ -470,16 +504,18 @@
                 </div>
             </div> 
 
-            <!---------------------- MODAL COMPROVANTES DE SERVIÇO --------------------------> 
+            <!-- >>>> MODAL COMPROVANTES DE SERVIÇO --> 
             <div class="modal fade" id="modal_comprovante" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
+
                     <div class="modal-content">
 
                         <!-- Cabeçalho/Nome Serviço --> 
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">
-                                Tenha todos retornos.
+                                Apenas informativo.
                             </h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -488,57 +524,45 @@
                         <!-- Especificação Serviço -->
                         <div class="modal-body">
                             <ul class="list-group">
+
                                 <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Notas Fiscais 
-                                        </button>
+                                    <div class="dropdown text-list">
+                                        <strong> <i class="fas fa-check-circle"></i> &nbsp; Comprovantes / Notas Fiscais. </strong>
                                     </div>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Datas
-                                        </button>
-                                </li>
-
-                                <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Planilha 
-                                        </button>
+                                    <div class="dropdown text-list">
+                                        <strong> <i class="fas fa-check-circle"></i> &nbsp; Acompanhamento em tempo real. </strong>
                                     </div>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Andamento
-                                        </button>
+                                    <div class="dropdown text-list">
+                                        <strong> <i class="fas fa-check-circle"></i> &nbsp; Informações gerais da solicitação. </strong> 
                                     </div>
                                 </li>
 
                                 <li class="list-group-item">
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Check-list Veiculo
-                                        </button>
+                                    <div class="dropdown text-list">
+                                        <strong> <i class="fas fa-check-circle"></i> &nbsp; Design Intuitivo. </strong>
                                     </div>
                                 </li>
+
                             </ul>
                         </div>
 
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"> Fechar </button>
                         </div>
+
                     </div>
 
                 </div>
             </div>
 
-            
         </div>
+        
     </div>
 </section>
 
