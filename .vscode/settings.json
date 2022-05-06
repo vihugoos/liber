@@ -3,9 +3,11 @@
         "disp",
         "disponib",
         "LGPD",
+        "postgresql",
         "signin",
         "Solic",
         "swal",
+        "Usuario",
         "wsgi"
     ]
 }
