@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lm!fp@xt2ntle(v4=i5rymvew^jykpdqejr0eu%5mpqc68-rq+'
 
 # SECURITY WARNING: don't run with debug turned on in production! 
-DEBUG = False 
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,16 +79,16 @@ WSGI_APPLICATION = 'liber.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fusion',
-        'USER': 'postgres',
-        'PASSWORD': 'Hugo@12',
-        'HOST': 'localhost',
-        'PORT': '5432'
-    }
-}"""
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'fusion',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Hugo@12',
+#         'HOST': 'localhost',
+#         'PORT': '5432'
+#     }
+# }
 
 
 DATABASES = {
