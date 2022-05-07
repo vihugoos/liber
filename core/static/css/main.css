@@ -998,7 +998,7 @@ hr {
 }
 
 #pricing .table .description {
-  text-align: center;
+  text-align: left;
   padding: 0px 50px;
   margin-bottom: 20px;
 }
@@ -1487,5 +1487,9 @@ textarea {
 
 .text-list {
   color: #4F4F4F;
+}
+
+.check-plans {
+  float: right;
 }
 
