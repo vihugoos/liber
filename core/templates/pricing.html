@@ -1,7 +1,7 @@
 {% load static %} 
 
 <section id="pricing" class="section-padding">
-    <div class="container">
+    <div class="container"> 
 
         <div class="section-header text-center">          
             <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s"> Planos </h2>
@@ -12,7 +12,13 @@
 
             <!-- Plano Básico --> 
             <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="table wow fadeInLeft" data-wow-delay="1.2s">
+
+                {% if user.is_authenticated and user.plano == 'Basic' %} 
+                    <div class="table wow fadeInLeft" id="active-tb" data-wow-delay="1.2s">
+                {% else %}
+                    <div class="table wow fadeInLeft" data-wow-delay="1.2s"> 
+                {% endif %}
+
                     <div class="icon-box">
                         <i class="lni-package"></i>
                     </div>
@@ -34,14 +40,30 @@
                         <li style="text-align: center;"> - </li>
                     </ul>
 
-                    <a href="#contact" class="btn btn-common"> Contratar </i></a>
+                    {% if user.is_authenticated and user.plano == 'Basic' %}  
+                        <p class="btn btn-common" style="background-color: #8A2BE2;"> Seu plano atual </i> </p>
+                    {% else %}
+                        <a href="#contact" class="btn btn-common"> Contratar </i></a>
+                    {% endif %}
+
                 </div> 
-            </div>
+            </div> 
+
+
+            <!-- ####################################################################### --> 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### -->
 
 
             <!-- Plano Premium --> 
             <div class="col-lg-4 col-md-6 col-xs-12 active">
-                <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
+
+                {% if user.is_authenticated and user.plano == 'Premium' %} 
+                    <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
+                {% else %}
+                    <div class="table wow fadeInUp" data-wow-delay="1.2s"> 
+                {% endif %}
+
                     <div class="icon-box">
                         <i class="lni-drop"></i>
                     </div>
@@ -63,14 +85,30 @@
                         <li style="text-align: center;"> - </li> 
                     </ul>
 
-                    <a href="#contact" class="btn btn-common"> Contratar </i></a>
+                    {% if user.is_authenticated and user.plano == 'Premium' %}  
+                        <p class="btn btn-common" style="background-color: #8A2BE2;"> Seu plano atual </i> </p>
+                    {% else %}
+                        <a href="#contact" class="btn btn-common"> Contratar </i></a>
+                    {% endif %}
+
                 </div> 
             </div> 
             
 
+            <!-- ####################################################################### --> 
+            <!-- ####################################################################### -->
+            <!-- ####################################################################### --> 
+
+
             <!-- Plano Super Green --> 
             <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="table wow fadeInRight" data-wow-delay="1.2s">
+
+                {% if user.is_authenticated and user.plano == 'Black' %} 
+                    <div class="table wow fadeInRight" id="active-tb" data-wow-delay="1.2s">
+                {% else %}
+                    <div class="table wow fadeInRight" data-wow-delay="1.2s">
+                {% endif %}
+                    
                     <div class="icon-box">
                         <i class="lni-star"></i>
                     </div>
@@ -89,10 +127,15 @@
                         <li> • Agendamentos                                 <i class="fas fa-check-circle check-plans"></i> </li>
                         <li> • Agend. Viagens                               <i class="fas fa-check-circle check-plans"></i> </li>
                         <li> • 8 Serviços Presenciais                       <i class="fas fa-check-circle check-plans"></i> </li>
-                        <li> • <strong> Priori. em Solicitações </strong>   <i class="fas fa-check-circle check-plans"></i> </li>
+                        <li> • <strong> Prio. em Solicitações </strong>   <i class="fas fa-check-circle check-plans"></i> </li>
                     </ul>
 
-                    <a href="#contact" class="btn btn-common"> Contratar </i></a>
+                    {% if user.is_authenticated and user.plano == 'Black' %}  
+                        <p class="btn btn-common" style="background-color: #8A2BE2;"> Seu plano atual </i> </p>
+                    {% else %}
+                        <a href="#contact" class="btn btn-common"> Contratar </i></a>
+                    {% endif %}
+
                 </div> 
             </div>
             
