@@ -10,3 +10,7 @@ __pycach__
 
 media/*
 
+.vscode/*
+
+virtual-env/*
+
