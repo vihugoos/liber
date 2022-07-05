@@ -92,7 +92,7 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
 ### Installation
 
 1. Clone the repo 
-   ```cmd
+   ```bash
    git clone https://github.com/vihugoos/liber.git
    ```
 2. Change the settings in `.\liber\settings.py` 
