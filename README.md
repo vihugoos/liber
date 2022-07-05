@@ -83,7 +83,7 @@ To get started, you need to have <strong>Python 3.8+</strong> installed on your 
 
 First of all, we need to ensure that the database server is running, to do so, run the following commands. 
 
-1. Open cmd terminal as <strong>administrator</strong> and write (<i>looking at psql version, in this case 14</i>)
+1. Open cmd terminal as <strong>administrator</strong> (<i>looking at psql version, in this case 14</i>)
    ```cmd
    net start postgresql-x64-14
    ```
