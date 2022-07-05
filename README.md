@@ -1,7 +1,7 @@
 <div id="top"> </div>
 <br/>
 
-<!-- PROJECT LOGO --> 
+<!---- PROJECT LOGO ----> 
 <div align="center">
   <a href="https://github.com/vihugoos/liber">
     <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="100"/>
@@ -21,7 +21,7 @@
 </div>
 
 
-<!-- TABLE OF CONTENTS --> 
+<!---- TABLE OF CONTENTS ----> 
 <details>
   <summary> Table of Contents </summary>
   <ol>
@@ -46,7 +46,7 @@
 </details>
 
 
-<!-- THE PROJECT -->
+<!---- THE PROJECT ---->
 ## About The Project
 
 <img src="https://user-images.githubusercontent.com/44311634/177225042-e1127ae0-ef95-42e7-9e80-0fc47074e9f3.jpg" align="center" alt="Project Home Page">
@@ -74,7 +74,7 @@ Specialized advice for medical professionals, offering a range of services with 
 <br/>
 
 
-<!-- GETTING STARTED --> 
+<!---- GETTING STARTED ----> 
 ## Getting Started
 
 To get started, you need to have <strong>Python 3.8+</strong> installed on your machine. For more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.postgresql.org/download/"> PostgreSQL Downloads</a>. 
@@ -128,7 +128,7 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```
  
 
-<!-- USAGE EXAMPLES -->
+<!---- USAGE EXAMPLES ---->
 ## Usage
 
 With the installation complete, we can start the project. 
@@ -149,7 +149,7 @@ To enjoy the entire application, create a super user with the following command 
 <br/>
 
 
-<!-- CONTRIBUTING -->
+<!---- CONTRIBUTING ---->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -165,14 +165,14 @@ Don't forget to give the project a star! Thanks again!
 <br/>
 
 
-<!-- LICENSE --> 
+<!---- LICENSE ----> 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 <br/> <br/> 
 
 
-<!-- CONTACT -->
+<!---- CONTACT ---->
 ## Contact
 
 Developer Victor Hugo - victorhugoos@live.com 
