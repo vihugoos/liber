@@ -70,7 +70,7 @@ Specialized advice for medical professionals, offering a range of services with 
     </a>
 </div>
 
-<p align="right"><a href="#top"> &#129045; back to top </a></p>
+<br/>
 <br/>
 
 
@@ -126,9 +126,7 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```cmd
    python manage.py migrate
    ```
-
-<p align="right"><a href="#top"> &#129045; back to top </a></p>
-
+ 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
