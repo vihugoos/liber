@@ -168,7 +168,7 @@ Don't forget to give the project a star! Thanks again!
 <!---- LICENSE ----> 
 ## License
 
-Distributed under the Creative Commons Zero v1.0 Universal. See `LICENSE.txt` for more information.
+Distributed under the CC0 1.0 Universal. See `LICENSE.txt` for more information.
 <br/> <br/> 
 
 
