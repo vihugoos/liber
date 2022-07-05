@@ -12,8 +12,8 @@
   </h2>
   
   <p align="center">
-    Platform of the consulting company Liber, developed with Bootstrap and Python Django. <br/>
-    Explore <a href="https://docs.djangoproject.com/en/3.2/">Django 3.2</a> docs &#187; <br/> <br/>
+    Platform of the consulting company Liber, developed with Bootstrap and Django. <br/>
+    Explore <a href="https://docs.djangoproject.com/en/3.2/">Django</a> or <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap</a> docs &#187; <br/> <br/>
     <a href="https://liber-website.herokuapp.com/"> View Demo Project </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Report Bug </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Request Feature </a>
@@ -39,11 +39,9 @@
       </ul>
     </li>
     <li><a href="#usage"> Usage </a></li>
-    <li><a href="#roadmap"> Roadmap </a></li>
     <li><a href="#contributing"> Contributing </a></li>
     <li><a href="#license"> License </a></li>
     <li><a href="#contact"> Contact </a></li>
-    <li><a href="#acknowledgments"> Acknowledgments </a></li>
   </ol>
 </details>
 
@@ -97,7 +95,7 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```cmd
    git clone https://github.com/vihugoos/liber.git
    ```
-2. Change the settings in `.\liber\settings.py`
+2. Change the settings in `.\liber\settings.py` 
    ```python
     DEBUG = True
    
@@ -105,18 +103,18 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
       'default': {
           'ENGINE': 'django.db.backends.postgresql',
           'NAME': 'liber',
-          'USER': '@yourUsernameRoot',
+          'USER': 'postgres',
           'PASSWORD': '@yourPasswordRoot',
           'HOST': 'localhost',
           'PORT': '5432'
       }
     }
    ```
-3. Inside the project folder, create a python virtual environment 
+3. Inside the project root directory, create a python virtual environment 
    ```cmd
    python3.8 -m venv virtual-env
    ```
-4. Enable virtual environment in terminal
+4. Enable virtual environment in cmd terminal
    ```cmd
    cd virtual-env/Scripts/Activate
    ```
@@ -130,7 +128,6 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```
 
 <p align="right"><a href="#top"> &#129045; back to top </a></p>
-<br/>
 
 
 <!-- USAGE EXAMPLES -->
@@ -144,29 +141,14 @@ With the installation complete, we can start the project.
    ```
 
 <br/>
-To enjoy the entire application, create a super user with the following command and follow the terminal instructions. You will be able <strong>to track</strong> and <strong>change all requests</strong> in the admin panel. 
+To enjoy the entire application, create a super user with the following command and follow the terminal instructions. You will be able <strong>to track</strong> and <strong>change all requests</strong> in the admin panel accessing <strong>localhost:8000/accounts/admin/</strong> 
 <br/> <br/>
 
 * Command to create super user 
    ```cmd
    python manage.py createsuperuser
    ```
-
-<p align="right"><a href="#top"> &#129045; back to top </a></p>
 <br/>
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
@@ -182,50 +164,19 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+<br/>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-
-<!-- LICENSE -->
+<!-- LICENSE --> 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<br/> <br/> 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Developer Victor Hugo - victorhugoos@live.com 
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+<p align="right"><a href="#top"> &#129045; back to top </a></p> 
