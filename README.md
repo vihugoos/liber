@@ -49,7 +49,7 @@
 <!---- THE PROJECT ---->
 ## About The Project
 
-<img src="https://user-images.githubusercontent.com/44311634/177256609-bda7137a-7a71-4ed0-aa66-7cfb8f64caf7.jpg" align="center" alt="Project Home Page">
+<img src="https://user-images.githubusercontent.com/44311634/177375857-21021f9f-d608-4c88-8d79-7188796f4fd7.jpg" align="center" alt="Project Home Page">
 Specialized advice for medical professionals, offering a range of services with the aim of preserving our client's greatest asset: time. The services range from homemade, vehicles to the availability of motoboy.
 
 
