@@ -1,22 +1,19 @@
-<div id="top"></div>
-
-
-<!-- PROJECT LOGO --> 
+<div id="top"> </div>
 <br/>
 
+<!-- PROJECT LOGO --> 
 <div align="center">
   <a href="https://github.com/vihugoos/liber">
-    <img src="/assets-readme/logo_liber_transparent.png" alt="Logo" height="55">
+    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="120"/>
   </a>
 
-<h3 align="center"> Liber - Advice and Solutions </h3> 
+  <h2 align="center"> 
+    Liber - Advice and Solutions for Doctors
+  </h2>
+  
   <p align="center">
-    Platform of the consulting company Liber, developed with Bootstrap and Python Django. 
-    <br/>
-     Explore <a href="https://docs.djangoproject.com/en/3.2/"> Django 3.2 </a> 
-     or <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> Bootstrap 4 </a> docs <strong> » </strong> 
-    <br/>
-    <br/>
+    Platform of the consulting company Liber, developed with Bootstrap and Python Django. <br/>
+    Explore <a href="https://docs.djangoproject.com/en/3.2/">Django 3.2</a> docs &#187; <br/> <br/>
     <a href="https://liber-website.herokuapp.com/"> View Demo Project </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Report Bug </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Request Feature </a>
@@ -24,84 +21,95 @@
 </div>
 
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLE OF CONTENTS --> 
 <details>
-  <summary>Table of Contents</summary>
+  <summary> Table of Contents </summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project"> About The Project </a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with"> Built With </a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started"> Getting Started </a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites"> Prerequisites </a></li>
+        <li><a href="#installation"> Installation </a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage"> Usage </a></li>
+    <li><a href="#roadmap"> Roadmap </a></li>
+    <li><a href="#contributing"> Contributing </a></li>
+    <li><a href="#license"> License </a></li>
+    <li><a href="#contact"> Contact </a></li>
+    <li><a href="#acknowledgments"> Acknowledgments </a></li>
   </ol>
 </details>
 
 
 <!-- THE PROJECT -->
-## Project Home Page 
+## About The Project
 
-<p align="center">
-    <img src="/assets-readme/home_page_liber.jpg" alt="License">
-</p>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<img src="https://user-images.githubusercontent.com/44311634/177225042-e1127ae0-ef95-42e7-9e80-0fc47074e9f3.jpg" align="center" alt="Project Home Page">
+Specialized advice for medical professionals, offering a range of services with the aim of preserving our client's greatest asset: time. The services range from homemade, vehicles to the availability of motoboy.
 
 
+### Built With 
 
-### Built With
+<div style="display: inline_block">
+    <!-- Icon Django -->
+    <a href="https://docs.djangoproject.com/en/3.2/"> 
+      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
+    </a> &nbsp; 
+    <!-- Icon Bootstrap -->
+    <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> 
+      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
+    </a> &nbsp;  
+    <!-- Icon PostgreSQL -->
+    <a href="https://www.postgresql.org/"> 
+      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
+    </a>
+</div>
 
-* [Python Django](https://docs.djangoproject.com/en/3.2/)
-* [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-* [PostgreSQL](https://www.postgresql.org/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top"> &#129045; back to top </a></p>
+<br/>
 
 
-<!-- GETTING STARTED -->
+<!-- GETTING STARTED --> 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get started, you need to have <strong>Python 3.8+</strong> installed on your machine. For more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.postgresql.org/download/"> PostgreSQL Downloads</a>. 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
+First of all, we need to ensure that the <i>database server</i> is running, to do so, run the following commands. <strong>WARNING:</strong> Always looking at the installed version. 
+* Windows Terminal
+  ```cmd
+  net start postgresql-x64-14
   ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
+1. Clone the repo 
+   ```cmd
+   git clone https://github.com/vihugoos/liber.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+2. Inside the project folder, create a python virtual environment 
+   ```cmd
+   python3.8 -m venv virtual-env
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Enable virtual environment in terminal
+   ```cmd
+   cd virtual-env/Scripts/Activate
+   ```
+4. Go back to the root directory and install all dependencies 
+   ```cmd
+   pip install -r requirements.txt
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top"> &#129045; back to top </a></p>
+<br/>
 
 
 <!-- USAGE EXAMPLES -->
