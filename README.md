@@ -79,12 +79,12 @@ A platform for customers to request different types of services and to be able t
 
 To get started, you need to have <strong>Python 3.8+</strong> installed on your machine. For more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.postgresql.org/download/"> PostgreSQL Downloads</a>. 
 
-Please, also add PostgreSQL executable path to user <strong>environment variables</strong>, to be able to use the `psql` command in the terminal. 
+<strong>WARNING</strong>: Add PostgreSQL executable path to user <strong>environment variables</strong>, to be able to use the `psql` command in the terminal, or create a database called `liber` via graphical interface using the pgAdmin, it's up to you what you think is best. 
 
 
 ### Prerequisites
 
-First of all, we need to ensure that the database server is running, to do so, run the following commands. 
+First of all, we need to ensure that the database server is running, to do so, run the following commands in case you haven't created the database manually via pgAdmin, as mentioned above, if you have already created the database `liber`, just run the first command below. 
 
 1. Open cmd terminal as <strong>administrator</strong> (<i>looking at psql version, in this case 14</i>)
    ```cmd
