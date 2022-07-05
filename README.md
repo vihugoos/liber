@@ -121,11 +121,15 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```cmd
    Activate
    ```
-5. Go back to the root directory and install all dependencies 
+6. Go back to the root directory with virtual environment enable 
+   ```cmd
+   cd ..\..\
+   ```
+7. Install all dependencies 
    ```cmd
    pip install -r requirements.txt
    ```
-6. Run the migrations
+8. Run the migrations
    ```cmd
    python manage.py migrate
    ```
