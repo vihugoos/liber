@@ -83,7 +83,7 @@ To get started, you need to have <strong>Python 3.8+</strong> installed on your 
 
 First of all, we need to ensure that the <i>database server</i> is running, to do so, run the following commands. <strong>WARNING:</strong> Always looking at the installed version of PostgreSQL.
 
-* Windows CMD Terminal (as administrator)
+* Windows Terminal (as administrator)
    ```cmd
    net start postgresql-x64-14
    ```
@@ -116,7 +116,10 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```
 4. Enable virtual environment in cmd terminal
    ```cmd
-   cd virtual-env/Scripts/Activate
+   cd virtual-env/Scripts/
+   ```
+   ```cmd
+   Activate
    ```
 5. Go back to the root directory and install all dependencies 
    ```cmd
