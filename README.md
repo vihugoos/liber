@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO --> 
 <div align="center">
   <a href="https://github.com/vihugoos/liber">
-    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="120"/>
+    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="100"/>
   </a>
 
   <h2 align="center"> 
