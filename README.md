@@ -83,11 +83,13 @@ To get started, you need to have <strong>Python 3.8+</strong> installed on your 
 
 ### Prerequisites
 
-First of all, we need to ensure that the <i>database server</i> is running, to do so, run the following commands. <strong>WARNING:</strong> Always looking at the installed version. 
-* Windows Terminal
-  ```cmd
-  net start postgresql-x64-14
-  ```
+First of all, we need to ensure that the <i>database server</i> is running, to do so, run the following commands. <strong>WARNING:</strong> Always looking at the installed version of PostgreSQL.
+
+* Windows Terminal (as administrator)
+   ```cmd
+   net start postgresql-x64-14
+   ```
+
 
 ### Installation
 
@@ -95,17 +97,36 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```cmd
    git clone https://github.com/vihugoos/liber.git
    ```
-2. Inside the project folder, create a python virtual environment 
+2. Change the settings in `.\liber\settings.py`
+   ```python
+    DEBUG = True
+   
+    DATABASES = {
+      'default': {
+          'ENGINE': 'django.db.backends.postgresql',
+          'NAME': 'liber',
+          'USER': '@yourUsernameRoot',
+          'PASSWORD': '@yourPasswordRoot',
+          'HOST': 'localhost',
+          'PORT': '5432'
+      }
+    }
+   ```
+3. Inside the project folder, create a python virtual environment 
    ```cmd
    python3.8 -m venv virtual-env
    ```
-3. Enable virtual environment in terminal
+4. Enable virtual environment in terminal
    ```cmd
    cd virtual-env/Scripts/Activate
    ```
-4. Go back to the root directory and install all dependencies 
+5. Go back to the root directory and install all dependencies 
    ```cmd
    pip install -r requirements.txt
+   ```
+6. Run the migrations
+   ```cmd
+   python manage.py migrate
    ```
 
 <p align="right"><a href="#top"> &#129045; back to top </a></p>
@@ -115,11 +136,24 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+With the installation complete, we can start the project. 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Starting the project 
+   ```cmd
+   python manage.py runserver
+   ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<br/>
+To enjoy the entire application, create a super user with the following command and follow the terminal instructions. You will be able <strong>to track</strong> and <strong>change all requests</strong> in the admin panel. 
+<br/> <br/>
+
+* Command to create super user 
+   ```cmd
+   python manage.py createsuperuser
+   ```
+
+<p align="right"><a href="#top"> &#129045; back to top </a></p>
+<br/>
 
 
 <!-- ROADMAP -->
