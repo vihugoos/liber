@@ -4,7 +4,7 @@
 <!---- PROJECT LOGO ----> 
 <div align="center">
   <a href="https://github.com/vihugoos/liber">
-    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="100"/>
+    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="90"/>
   </a>
 
   <h2 align="center"> 
@@ -49,7 +49,7 @@
 <!---- THE PROJECT ---->
 ## About The Project
 
-<img src="https://user-images.githubusercontent.com/44311634/177255901-09aeb20a-3e24-4416-801e-f9c2424d329a.jpg" align="center" alt="Project Home Page">
+<img src="https://user-images.githubusercontent.com/44311634/177256609-bda7137a-7a71-4ed0-aa66-7cfb8f64caf7.jpg" align="center" alt="Project Home Page">
 Specialized advice for medical professionals, offering a range of services with the aim of preserving our client's greatest asset: time. The services range from homemade, vehicles to the availability of motoboy.
 
 
