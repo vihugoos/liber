@@ -77,7 +77,9 @@ Specialized advice for medical professionals, offering a range of services with 
 <!---- GETTING STARTED ----> 
 ## Getting Started
 
-To get started, you need to have <strong>Python 3.8+</strong> installed on your machine. For more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.postgresql.org/download/"> PostgreSQL Downloads</a>. To check if everything is ok, run the following commands in the cmd terminal: `python --version` and `psql --version`.
+To get started, you need to have <strong>Python 3.8+</strong> installed on your machine. For more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.postgresql.org/download/"> PostgreSQL Downloads</a>. 
+
+To check if everything is ok, run the following commands in the cmd terminal: `python --version` and `psql --version`.
 
 
 ### Prerequisites
