@@ -50,7 +50,7 @@
 ## About The Project
 
 <img src="https://user-images.githubusercontent.com/44311634/177375857-21021f9f-d608-4c88-8d79-7188796f4fd7.jpg" align="center" alt="Project Home Page">
-Specialized advice for medical professionals, offering a range of services with the aim of preserving our client's greatest asset: time. The services range from homemade, vehicles to the availability of motoboy.
+A platform for customers to request different types of services and to be able to follow the progress of their requests via their profile. Request management is done in the admin panel.
 
 
 ### Built With 
