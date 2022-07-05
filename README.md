@@ -1,22 +1,19 @@
-<div id="top"></div>
-
-
-<!-- PROJECT LOGO --> 
+<div id="top"> </div>
 <br/>
 
+<!---- PROJECT LOGO ----> 
 <div align="center">
   <a href="https://github.com/vihugoos/liber">
-    <img src="/assets-readme/logo_liber_transparent.png" alt="Logo" height="55">
+    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="90"/>
   </a>
 
-<h3 align="center"> Liber - Advice and Solutions </h3> 
+  <h2 align="center"> 
+    Liber - Advice and Solutions for Doctors
+  </h2>
+  
   <p align="center">
-    Platform of the consulting company Liber, developed with Bootstrap and Python Django. 
-    <br/>
-     Explore <a href="https://docs.djangoproject.com/en/3.2/"> Django 3.2 </a> 
-     or <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> Bootstrap 4 </a> docs <strong> » </strong> 
-    <br/>
-    <br/>
+    Platform of the consulting company Liber, developed with Bootstrap and Django. <br/>
+    Explore <a href="https://docs.djangoproject.com/en/3.2/">Django</a> or <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap</a> docs &#187; <br/> <br/>
     <a href="https://liber-website.herokuapp.com/"> View Demo Project </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Report Bug </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Request Feature </a>
@@ -24,110 +21,135 @@
 </div>
 
 
-<!-- TABLE OF CONTENTS -->
+<!---- TABLE OF CONTENTS ----> 
 <details>
-  <summary>Table of Contents</summary>
+  <summary> Table of Contents </summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project"> About The Project </a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with"> Built With </a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started"> Getting Started </a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites"> Prerequisites </a></li>
+        <li><a href="#installation"> Installation </a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage"> Usage </a></li>
+    <li><a href="#contributing"> Contributing </a></li>
+    <li><a href="#license"> License </a></li>
+    <li><a href="#contact"> Contact </a></li>
   </ol>
 </details>
 
 
-<!-- THE PROJECT -->
-## Project Home Page 
+<!---- THE PROJECT ---->
+## About The Project
 
-<p align="center">
-    <img src="/assets-readme/home_page_liber.jpg" alt="License">
-</p>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<img src="https://user-images.githubusercontent.com/44311634/177256609-bda7137a-7a71-4ed0-aa66-7cfb8f64caf7.jpg" align="center" alt="Project Home Page">
+Specialized advice for medical professionals, offering a range of services with the aim of preserving our client's greatest asset: time. The services range from homemade, vehicles to the availability of motoboy.
 
 
+### Built With 
 
-### Built With
+<div style="display: inline_block">
+    <!-- Icon Django -->
+    <a href="https://docs.djangoproject.com/en/3.2/"> 
+      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
+    </a> &nbsp; 
+    <!-- Icon Bootstrap -->
+    <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> 
+      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
+    </a> &nbsp;  
+    <!-- Icon PostgreSQL -->
+    <a href="https://www.postgresql.org/"> 
+      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
+    </a>
+</div>
 
-* [Python Django](https://docs.djangoproject.com/en/3.2/)
-* [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-* [PostgreSQL](https://www.postgresql.org/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<br/>
+<br/>
 
 
-<!-- GETTING STARTED -->
+<!---- GETTING STARTED ----> 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get started, you need to have <strong>Python 3.8+</strong> installed on your machine. For more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.postgresql.org/download/"> PostgreSQL Downloads</a>. 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+First of all, we need to ensure that the <i>database server</i> is running, to do so, run the following commands. <strong>WARNING:</strong> Always looking at the installed version of PostgreSQL.
+
+* Windows Terminal (as administrator)
+   ```cmd
+   net start postgresql-x64-14
+   ```
+
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
+1. Clone the repo 
+   ```bash
+   git clone https://github.com/vihugoos/liber.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+2. Change the settings in `.\liber\settings.py` 
+   ```python
+    DEBUG = True
+   
+    DATABASES = {
+      'default': {
+          'ENGINE': 'django.db.backends.postgresql',
+          'NAME': 'liber',
+          'USER': 'postgres',
+          'PASSWORD': '@yourPasswordRoot',
+          'HOST': 'localhost',
+          'PORT': '5432'
+      }
+    }
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Inside the project root directory, create a python virtual environment 
+   ```cmd
+   python3.8 -m venv virtual-env
    ```
+4. Enable virtual environment in cmd terminal
+   ```cmd
+   cd virtual-env/Scripts/Activate
+   ```
+5. Go back to the root directory and install all dependencies 
+   ```cmd
+   pip install -r requirements.txt
+   ```
+6. Run the migrations
+   ```cmd
+   python manage.py migrate
+   ```
+ 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- USAGE EXAMPLES -->
+<!---- USAGE EXAMPLES ---->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+With the installation complete, we can start the project. 
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Starting the project 
+   ```cmd
+   python manage.py runserver
+   ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<br/>
+To enjoy the entire application, create a super user with the following command and follow the terminal instructions. You will be able <strong>to track</strong> and <strong>change all requests</strong> in the admin panel accessing <strong>localhost:8000/accounts/admin/</strong> 
+<br/> <br/>
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+* Command to create super user 
+   ```cmd
+   python manage.py createsuperuser
+   ```
+<br/>
 
 
-<!-- CONTRIBUTING -->
+<!---- CONTRIBUTING ---->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -140,50 +162,19 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+<br/>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-
-<!-- LICENSE -->
+<!---- LICENSE ----> 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the CC0 1.0 Universal. See `LICENSE.txt` for more information.
+<br/> <br/> 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-
-<!-- CONTACT -->
+<!---- CONTACT ---->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Developer Victor Hugo - victorhugoos@live.com 
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+<p align="right"><a href="#top"> &#129045; back to top </a></p> 
