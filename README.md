@@ -83,11 +83,22 @@ To get started, you need to have <strong>Python 3.8+</strong> installed on your 
 
 First of all, we need to ensure that the <i>database server</i> is running, to do so, run the following commands. <strong>WARNING:</strong> Always looking at the installed version of PostgreSQL.
 
-* Windows Terminal (as administrator)
+1. Windows terminal (as administrator)
    ```cmd
    net start postgresql-x64-14
    ```
-
+2. Connect with psql 
+   ```cmd
+   psql -U yourUserNameRoot
+   ```
+3. Create a database 
+   ```cmd
+   CREATE DATABASE liber;
+   ```
+4. Quit psql 
+   ```cmd
+   \q
+   ```
 
 ### Installation
 
@@ -103,8 +114,8 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
       'default': {
           'ENGINE': 'django.db.backends.postgresql',
           'NAME': 'liber',
-          'USER': 'postgres',
-          'PASSWORD': '@yourPasswordRoot',
+          'USER': 'yourUsernameRoot',
+          'PASSWORD': 'yourPasswordRoot',
           'HOST': 'localhost',
           'PORT': '5432'
       }
