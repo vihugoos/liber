@@ -112,7 +112,7 @@ First of all, we need to ensure that the <i>database server</i> is running, to d
    ```
 3. Inside the project root directory, create a python virtual environment 
    ```cmd
-   python3.8 -m venv virtual-env
+   python -m venv virtual-env
    ```
 4. Enable virtual environment in cmd terminal
    ```cmd
