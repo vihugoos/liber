@@ -196,6 +196,6 @@ Distributed under the CC0 1.0 Universal. See `LICENSE.txt` for more information.
 <!---- CONTACT ---->
 ## Contact
 
-Developer Victor Hugo - victorhugoos@live.com 
+Developer @vihugoos - victorhugoos@live.com 
 
 <p align="right"><a href="#top"> &#129045; back to top </a></p> 
