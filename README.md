@@ -109,7 +109,7 @@ First of all, we need to ensure that the database server is running, to do so, r
    ```bash
    git clone https://github.com/vihugoos/liber.git
    ```
-2. Change the settings in `.\liber\settings.py` 
+2. Change the settings in `.\liber\settings.py` (don't forget to change the password)
    ```python
     DEBUG = True
    
