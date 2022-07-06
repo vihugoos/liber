@@ -92,7 +92,7 @@ First of all, we need to ensure that the database server is running, to do so, r
    ```
 2. Connect with psql 
    ```cmd
-   psql -U yourUserNameRoot
+   psql -U postgres
    ```
 3. Create a database 
    ```cmd
@@ -117,7 +117,7 @@ First of all, we need to ensure that the database server is running, to do so, r
       'default': {
           'ENGINE': 'django.db.backends.postgresql',
           'NAME': 'liber',
-          'USER': 'yourUsernameRoot',
+          'USER': 'postgres',
           'PASSWORD': 'yourPasswordRoot',
           'HOST': 'localhost',
           'PORT': '5432'
