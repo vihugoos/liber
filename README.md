@@ -62,11 +62,11 @@ A platform for customers to request different types of services and to be able t
     </a> &nbsp; 
     <!-- Icon Bootstrap -->
     <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> 
-      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
+      <img align="center" alt="Icon-Bootstrap" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
     </a> &nbsp;  
     <!-- Icon PostgreSQL -->
     <a href="https://www.postgresql.org/"> 
-      <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
+      <img align="center" alt="Icon-PostgreSQL" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
     </a>
 </div>
 
