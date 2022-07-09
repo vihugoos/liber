@@ -56,6 +56,10 @@ A platform for customers to request different types of services and to be able t
 ### Built With 
 
 <div style="display: inline_block">
+    <!-- Icon Python -->
+    <a href="https://docs.python.org/3.8/"> 
+      <img align="center" alt="Icon-Python" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> 
+    </a> 
     <!-- Icon Django -->
     <a href="https://docs.djangoproject.com/en/3.2/"> 
       <img align="center" alt="Icon-Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
