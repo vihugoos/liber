@@ -49,8 +49,8 @@
 <!---- THE PROJECT ---->
 ## About The Project
 
-<img src="https://user-images.githubusercontent.com/44311634/178083920-6d498c09-e680-4410-88b4-5fe39a76565a.gif" align="center" alt="Project Home Page">
-A platform for customers to request different types of services and to be able to follow the progress of their requests via their profile. Request management is done in the admin panel.
+<img src="https://user-images.githubusercontent.com/44311634/178084690-1e2c0794-d04a-444d-9e96-0ff181cb4dc8.gif" align="center" alt="Project Home Page">
+A platform for customers to request different types of services and to be able to follow the progress of their requests via their profile. Request management is done in the admin panel. 
 
 
 ### Built With 
