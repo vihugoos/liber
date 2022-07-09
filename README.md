@@ -49,7 +49,7 @@
 <!---- THE PROJECT ---->
 ## About The Project
 
-<img src="https://user-images.githubusercontent.com/44311634/177375857-21021f9f-d608-4c88-8d79-7188796f4fd7.jpg" align="center" alt="Project Home Page">
+<img src="https://user-images.githubusercontent.com/44311634/178083920-6d498c09-e680-4410-88b4-5fe39a76565a.gif" align="center" alt="Project Home Page">
 A platform for customers to request different types of services and to be able to follow the progress of their requests via their profile. Request management is done in the admin panel.
 
 
