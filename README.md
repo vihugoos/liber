@@ -57,19 +57,19 @@ A platform for customers to request different types of services and to be able t
 <div style="display: inline_block">
     <!-- Icon Python -->
     <a href="https://docs.python.org/3.8/"> 
-      <img align="center" alt="Icon-Python" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> 
+      <img align="center" alt="Icon-Python" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> 
     </a> 
     <!-- Icon Django -->
     <a href="https://docs.djangoproject.com/en/3.2/"> 
-      <img align="center" alt="Icon-Django" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
+      <img align="center" alt="Icon-Django" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
     </a> &nbsp; 
     <!-- Icon Bootstrap -->
     <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> 
-      <img align="center" alt="Icon-Bootstrap" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
+      <img align="center" alt="Icon-Bootstrap" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
     </a> &nbsp;  
     <!-- Icon PostgreSQL -->
     <a href="https://www.postgresql.org/"> 
-      <img align="center" alt="Icon-PostgreSQL" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
+      <img align="center" alt="Icon-PostgreSQL" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
     </a>
 </div>
 
