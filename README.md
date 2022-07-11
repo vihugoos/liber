@@ -121,7 +121,7 @@ First of all, we need to ensure that the database server is running, to do so, r
           'ENGINE': 'django.db.backends.postgresql',
           'NAME': 'liber',
           'USER': 'postgres',
-          'PASSWORD': 'yourPasswordRoot',
+          'PASSWORD': 'yourPassword',
           'HOST': 'localhost',
           'PORT': '5432'
       }
