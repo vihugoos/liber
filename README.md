@@ -3,7 +3,7 @@
 <!---- PROJECT LOGO ----> 
 <div align="center">
   <a href="https://github.com/vihugoos/liber">
-    <img src="https://user-images.githubusercontent.com/44311634/177224034-97d6fcb2-3dc2-4091-b016-4b901fbb681f.png" alt="Logo" height="90"/>
+    <img src="https://user-images.githubusercontent.com/44311634/213873944-91230648-2fae-4e03-9c29-dcb7d68acb38.png" alt="Logo" height="90"/>
   </a>
 
   <h2 align="center"> 
@@ -13,7 +13,7 @@
   <p align="center">
     Platform of the consulting company Liber, developed with Bootstrap and Django. <br/>
     Explore <a href="https://docs.djangoproject.com/en/3.2/">Django</a> or <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap</a> docs &#187; <br/> <br/>
-    <a href="https://liber-website.herokuapp.com/"> View Demo Project </a> &nbsp;•&nbsp;
+    <a href=""> View Demo Project </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Report Bug </a> &nbsp;•&nbsp;
     <a href="https://github.com/vihugoos/liber/issues"> Request Feature </a>
   </p>
@@ -57,11 +57,11 @@ A platform for customers to request different types of services and to be able t
 <div style="display: inline_block">
     <!-- Icon Python -->
     <a href="https://docs.python.org/3.8/"> 
-      <img align="center" alt="Icon-Python" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> 
+      <img align="center" alt="Icon-Python" height="33" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> 
     </a> 
     <!-- Icon Django -->
     <a href="https://docs.djangoproject.com/en/3.2/"> 
-      <img align="center" alt="Icon-Django" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
+      <img align="center" alt="Icon-Django" height="33" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"> 
     </a> &nbsp; 
     <!-- Icon Bootstrap -->
     <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> 
