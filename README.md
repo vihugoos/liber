@@ -67,6 +67,10 @@ A platform for customers to request different types of services and to be able t
     <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"> 
       <img align="center" alt="Icon-Bootstrap" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"> 
     </a> &nbsp;  
+    <!-- Icon Docker -->
+    <a href="https://www.docker.com/"> 
+      <img align="center" alt="Icon-Docker" height="53" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"> 
+    </a> &nbsp;
     <!-- Icon PostgreSQL -->
     <a href="https://www.postgresql.org/"> 
       <img align="center" alt="Icon-PostgreSQL" height="35" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg"> 
@@ -80,31 +84,15 @@ A platform for customers to request different types of services and to be able t
 <!---- GETTING STARTED ----> 
 ## Getting Started
 
-To get started, you need to have <strong>Python 3.8+</strong> installed on your machine, for more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>PostgreSQL</strong> installed, for more information visit <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"> PostgreSQL Downloads</a>. 
+To get started, you need to have <strong>Python 3.8+</strong> installed on your machine, for more information, visit <a href="https://www.python.org/downloads/"> Python Downloads</a> or <a href="https://www.anaconda.com/products/distribution">Anaconda Distribuition</a>. You will also need to have <strong>Docker</strong> installed, for more information visit <a href="https://docs.docker.com/engine/install/">Docker Engine Install</a>. 
 
-<strong>WARNING</strong>: Add PostgreSQL executable path to user <strong>environment variables</strong>, to be able to use the `psql` command in the terminal, or create a database called `liber` via graphical user interface using the pgAdmin, it's up to you what you think is best. <strong>Note:</strong> This installation guide is based on Windows systems. 
+<strong>Obs:</strong> This guide will only serve to run the project locally (development environment), initially based on linux systems.
 
 
 ### Prerequisites
 
-First of all, we need to ensure that the database server is running, to do so, run the following commands in case you haven't created the database manually via pgAdmin, as mentioned above, if you have already created the database `liber`, just run the first command below. 
+Other than Python and Docker installed, no prerequisites are needed to install the application.
 
-1. Open cmd terminal as <strong>administrator</strong> (<i>looking at psql version, in this case 14</i>)
-   ```cmd
-   net start postgresql-x64-14
-   ```
-2. Connect with psql 
-   ```cmd
-   psql -U postgres
-   ```
-3. Create a database 
-   ```cmd
-   CREATE DATABASE liber;
-   ```
-4. Quit psql 
-   ```cmd
-   \q
-   ```
 
 ### Installation
 
@@ -112,7 +100,23 @@ First of all, we need to ensure that the database server is running, to do so, r
    ```bash
    git clone https://github.com/vihugoos/liber.git
    ```
-2. Change the settings in `.\liber\settings.py` (don't forget to change the password)
+2. Inside the project root directory, create a python virtual environment 
+   ```bash
+   python3 -m venv virtual-env
+   ```
+3. Enable virtual environment 
+   ```bash
+   source virtual-env/bin/activate 
+   ```
+5. Install all dependencies 
+   ```bash
+   pip install -r requirements.txt
+   ```
+6. Create a postgres container docker 
+   ```bash
+   docker run --name liber -e POSTGRES_DB=liber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+   ```
+7. Change the settings in `.\liber\settings.py` (don't forget to change the password)
    ```python
     DEBUG = True
    
@@ -127,28 +131,9 @@ First of all, we need to ensure that the database server is running, to do so, r
       }
     }
    ```
-3. Inside the project root directory, create a python virtual environment 
-   ```cmd
-   python -m venv virtual-env
-   ```
-4. Enable virtual environment in cmd terminal
-   ```cmd
-   cd virtual-env/Scripts/
-   ```
-   ```cmd
-   Activate
-   ```
-6. Go back to the root directory with virtual environment enable 
-   ```cmd
-   cd ..\..\
-   ```
-7. Install all dependencies 
-   ```cmd
-   pip install -r requirements.txt
-   ```
 8. Run the migrations
-   ```cmd
-   python manage.py migrate
+   ```bash
+   python3 manage.py migrate
    ```
  
 
@@ -158,8 +143,8 @@ First of all, we need to ensure that the database server is running, to do so, r
 With the installation complete, we can start the project. 
 
 * Starting the project 
-   ```cmd
-   python manage.py runserver
+   ```bash
+   python3 manage.py runserver
    ```
 
 <br/>
@@ -167,8 +152,8 @@ To enjoy the entire application, create a super user with the following command 
 <br/> <br/>
 
 * Command to create super user 
-   ```cmd
-   python manage.py createsuperuser
+   ```bash
+   python3 manage.py createsuperuser
    ```
 <br/>
 
