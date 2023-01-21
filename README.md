@@ -133,8 +133,9 @@ With the installation complete, we can start the project.
    ```
 
 <br/>
-To enjoy the entire application, create a super user with the following command and follow the terminal instructions, remembering that in the 'plan' option it will be necessary to type <strong>'Basic'</strong>, <strong>'Premium'</strong> or <strong>'Black'</strong> to finish creating the user. You will be able <strong>to track</strong> and <strong>change all requests</strong> in the admin panel accessing <strong>localhost:8000/accounts/admin/</strong> 
-<br/> <br/>
+To enjoy the entire application, create a super user with the following command and follow the terminal instructions, remembering that in the 'plan' option it will be necessary to type <strong>'Basic'</strong>, <strong>'Premium'</strong> or <strong>'Black'</strong> to finish creating the user. <br/> <br/> 
+
+You will be able <strong>to track</strong> and <strong>change all requests</strong> in the admin panel accessing [`localhost:8000/accounts/admin`](http://localhost:8000/accounts/admin) <br/> 
 
 * Command to create super user 
    ```bash
