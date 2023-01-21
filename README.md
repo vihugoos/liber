@@ -69,7 +69,7 @@ A platform for customers to request different types of services and to be able t
     </a> &nbsp;  
     <!-- Icon Docker -->
     <a href="https://www.docker.com/"> 
-      <img align="center" alt="Icon-Docker" height="53" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"> 
+      <img align="center" alt="Icon-Docker" height="52" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"> 
     </a> &nbsp;
     <!-- Icon PostgreSQL -->
     <a href="https://www.postgresql.org/"> 
@@ -116,22 +116,7 @@ Other than Python and Docker installed, no prerequisites are needed to install t
    ```bash
    docker run --name liber -e POSTGRES_DB=liber -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
    ```
-7. Change the settings in `.\liber\settings.py` (don't forget to change the password)
-   ```python
-    DEBUG = True
-   
-    DATABASES = {
-      'default': {
-          'ENGINE': 'django.db.backends.postgresql',
-          'NAME': 'liber',
-          'USER': 'postgres',
-          'PASSWORD': 'yourPassword',
-          'HOST': 'localhost',
-          'PORT': '5432'
-      }
-    }
-   ```
-8. Run the migrations
+7. Run the migrations
    ```bash
    python3 manage.py migrate
    ```
