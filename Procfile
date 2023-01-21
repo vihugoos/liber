@@ -1,1 +1,0 @@
-web: gunicorn liber.wsgi --log-file -
